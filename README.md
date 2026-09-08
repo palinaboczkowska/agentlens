@@ -15,22 +15,32 @@ any employer's code or data.
 
 ## Status
 
-- [x] Session 1 — orchestration engine, tracing, unit tests (this commit)
-- [ ] Session 2 — real Claude-powered demo agents + synthetic ticket set
+- [x] Session 1 — orchestration engine, tracing, unit tests
+- [x] Session 2 (built, live run pending) — real Claude-powered demo agents, local
+      embedding retrieval, 26 synthetic tickets. Everything is built and typechecks;
+      the retriever is unit-tested for free (no API key needed). The actual
+      `demo:run` against Claude has not been executed yet — costs a small amount
+      (well under $1 for a full run on Haiku) and needs an `ANTHROPIC_API_KEY`.
 - [ ] Session 3 — failure categorizer + golden-set evaluation
 - [ ] Session 4 — polish, docs, CI
 - [ ] Session 5 (stretch) — MCP server, minimal dashboard
 
-## Quickstart (current: no API key needed yet)
+## Quickstart
 
 ```bash
 npm install
-npm test
-npm run cli -- demo:fake
+npm test               # no API key needed — includes a real local-embedding test
+npm run cli -- demo:fake   # toy pipeline, scripted fake LLM, no API key needed
 ```
 
-`demo:fake` runs a toy 2-agent pipeline against a scripted fake LLM client and writes
-a trace to `traces/`. The real, Claude-powered demo lands in Session 2.
+Running the real demo needs an Anthropic API key (pay-per-use, separate from a
+Claude.ai/Claude Code subscription):
+
+```bash
+cp .env.example .env   # then fill in ANTHROPIC_API_KEY
+npm run cli -- demo:run     # ~26 tickets x 3 agents on claude-haiku-4-5, well under $1
+npm run cli -- demo:report  # raw per-ticket summary from the saved traces
+```
 
 ## Architecture (short version, full write-up coming)
 

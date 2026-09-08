@@ -8,6 +8,9 @@ import { createClassifierAgent } from "./demo/agents/classifierAgent.js";
 import { createSupervisorAgent } from "./demo/agents/supervisorAgent.js";
 import { TraceRecorder } from "./tracing/recorder.js";
 import { saveTrace } from "./tracing/store.js";
+import { runDemo } from "./demo/runDemo.js";
+import { loadTraces } from "./reporting/loadTraces.js";
+import { printRawSummary } from "./reporting/cliReport.js";
 
 const program = new Command();
 program
@@ -45,6 +48,25 @@ program
     console.log("Pipeline finished. Final context:");
     console.log(JSON.stringify(finalContext, null, 2));
     console.log(`\nTrace written to ${filePath}`);
+  });
+
+program
+  .command("demo:run")
+  .description("Run the real 3-agent ticket-triage pipeline against every synthetic ticket (needs ANTHROPIC_API_KEY)")
+  .action(async () => {
+    await runDemo();
+  });
+
+program
+  .command("demo:report")
+  .description("Print a raw, pre-evaluation summary of the traces currently saved under traces/")
+  .action(async () => {
+    const traces = await loadTraces();
+    if (traces.length === 0) {
+      console.log("No traces found under traces/. Run `demo:fake` or `demo:run` first.");
+      return;
+    }
+    printRawSummary(traces);
   });
 
 program.parseAsync(process.argv).catch((error: unknown) => {
