@@ -11,6 +11,10 @@ import { saveTrace } from "./tracing/store.js";
 import { runDemo } from "./demo/runDemo.js";
 import { loadTraces } from "./reporting/loadTraces.js";
 import { printRawSummary } from "./reporting/cliReport.js";
+import { printEvaluationReport } from "./reporting/evaluationReport.js";
+import { loadGoldenSet } from "./evaluation/goldenSet.js";
+import { RuleBasedCategorizer } from "./evaluation/rules.js";
+import { evaluate, type PredictionVsLabel } from "./evaluation/metrics.js";
 
 const program = new Command();
 program
@@ -67,6 +71,34 @@ program
       return;
     }
     printRawSummary(traces);
+  });
+
+program
+  .command("evaluate")
+  .description("Compare the rule-based categorizer's predictions against a hand-labeled golden set")
+  .requiredOption("--golden <path>", "path to a golden-set JSON file")
+  .action(async (opts: { golden: string }) => {
+    const [goldenSet, traces] = await Promise.all([loadGoldenSet(opts.golden), loadTraces()]);
+    const traceById = new Map(traces.map((t) => [t.ticketId, t]));
+    const categorizer = new RuleBasedCategorizer();
+
+    const predictions: PredictionVsLabel[] = [];
+    for (const entry of goldenSet) {
+      const trace = traceById.get(entry.ticketId);
+      if (!trace) {
+        console.warn(`No trace found under traces/ for ticket "${entry.ticketId}", skipping.`);
+        continue;
+      }
+      const result = await categorizer.categorize(trace);
+      predictions.push({ ticketId: entry.ticketId, predicted: result.category, actual: entry.label });
+    }
+
+    if (predictions.length === 0) {
+      console.log("No golden-set entries matched a saved trace — nothing to evaluate.");
+      return;
+    }
+
+    printEvaluationReport(evaluate(predictions));
   });
 
 program.parseAsync(process.argv).catch((error: unknown) => {

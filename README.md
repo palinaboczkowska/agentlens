@@ -21,7 +21,12 @@ any employer's code or data.
       the retriever is unit-tested for free (no API key needed). The actual
       `demo:run` against Claude has not been executed yet — costs a small amount
       (well under $1 for a full run on Haiku) and needs an `ANTHROPIC_API_KEY`.
-- [ ] Session 3 — failure categorizer + golden-set evaluation
+- [x] Session 3 (built, real numbers pending) — rule-based failure categorizer,
+      metrics (precision/recall/F1 + confusion matrix), golden-set evaluation
+      CLI, and an optional LLM-judge categorizer for comparison. Fully
+      unit-tested against hand-built trace fixtures (free, no API key). The
+      real golden-set numbers need a live `demo:run` first — see
+      `docs/evaluation-methodology.md`.
 - [ ] Session 4 — polish, docs, CI
 - [ ] Session 5 (stretch) — MCP server, minimal dashboard
 
