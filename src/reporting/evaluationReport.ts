@@ -2,7 +2,15 @@ import Table from "cli-table3";
 import pc from "picocolors";
 import type { EvaluationReport } from "../evaluation/metrics.js";
 
-export function printEvaluationReport(report: EvaluationReport): void {
+export function printEvaluationReport(
+  report: EvaluationReport,
+  format: "table" | "json" = "table",
+): void {
+  if (format === "json") {
+    console.log(JSON.stringify(report, null, 2));
+    return;
+  }
+
   const table = new Table({ head: ["Category", "TP", "FP", "FN", "Precision", "Recall", "F1"] });
 
   for (const m of report.perCategory) {

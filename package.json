@@ -11,7 +11,7 @@
     "agentlens": "./dist/cli.js"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.build.json && mkdir -p dist/retrieval/kb && cp src/retrieval/kb/articles.json dist/retrieval/kb/articles.json",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "format": "prettier --write .",

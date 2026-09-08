@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import "dotenv/config";
 import { randomUUID } from "node:crypto";
 import { Command } from "commander";
 import { FakeLlmClient } from "./orchestration/fakeLlmClient.js";
@@ -15,6 +16,16 @@ import { printEvaluationReport } from "./reporting/evaluationReport.js";
 import { loadGoldenSet } from "./evaluation/goldenSet.js";
 import { RuleBasedCategorizer } from "./evaluation/rules.js";
 import { evaluate, type PredictionVsLabel } from "./evaluation/metrics.js";
+import { LLMJudgeCategorizer } from "./evaluation/llmJudge.js";
+import { AnthropicLlmClient } from "./orchestration/anthropicLlmClient.js";
+import type { Categorizer } from "./evaluation/categorizer.js";
+
+function parseFormat(value: string): "table" | "json" {
+  if (value !== "table" && value !== "json") {
+    throw new Error(`--format must be "table" or "json", got "${value}"`);
+  }
+  return value;
+}
 
 const program = new Command();
 program
@@ -64,23 +75,41 @@ program
 program
   .command("demo:report")
   .description("Print a raw, pre-evaluation summary of the traces currently saved under traces/")
-  .action(async () => {
+  .option("--format <format>", "table or json", "table")
+  .action(async (opts: { format: string }) => {
     const traces = await loadTraces();
     if (traces.length === 0) {
       console.log("No traces found under traces/. Run `demo:fake` or `demo:run` first.");
       return;
     }
-    printRawSummary(traces);
+    printRawSummary(traces, parseFormat(opts.format));
   });
 
 program
   .command("evaluate")
-  .description("Compare the rule-based categorizer's predictions against a hand-labeled golden set")
+  .description("Compare a categorizer's predictions against a hand-labeled golden set")
   .requiredOption("--golden <path>", "path to a golden-set JSON file")
-  .action(async (opts: { golden: string }) => {
+  .option("--format <format>", "table or json", "table")
+  .option(
+    "--judge",
+    "use the LLM-judge categorizer instead of the free rule-based one (costs one API call per trace, needs ANTHROPIC_API_KEY)",
+    false,
+  )
+  .option("--judge-model <model>", "model for --judge", "claude-sonnet-5")
+  .action(async (opts: { golden: string; format: string; judge: boolean; judgeModel: string }) => {
+    const format = parseFormat(opts.format);
     const [goldenSet, traces] = await Promise.all([loadGoldenSet(opts.golden), loadTraces()]);
     const traceById = new Map(traces.map((t) => [t.ticketId, t]));
-    const categorizer = new RuleBasedCategorizer();
+
+    let categorizer: Categorizer;
+    if (opts.judge) {
+      if (!process.env.ANTHROPIC_API_KEY) {
+        throw new Error("--judge needs ANTHROPIC_API_KEY set (it calls the Anthropic API).");
+      }
+      categorizer = new LLMJudgeCategorizer(new AnthropicLlmClient(), opts.judgeModel);
+    } else {
+      categorizer = new RuleBasedCategorizer();
+    }
 
     const predictions: PredictionVsLabel[] = [];
     for (const entry of goldenSet) {
@@ -98,7 +127,7 @@ program
       return;
     }
 
-    printEvaluationReport(evaluate(predictions));
+    printEvaluationReport(evaluate(predictions), format);
   });
 
 program.parseAsync(process.argv).catch((error: unknown) => {
