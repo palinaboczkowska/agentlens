@@ -52,10 +52,10 @@ Full write-up: [`docs/architecture.md`](./docs/architecture.md) ·
 - [x] Session 3 — rule-based failure categorizer, precision/recall/F1 metrics,
       golden-set evaluation CLI, optional LLM-judge categorizer for comparison
 - [x] Session 4 — this README, architecture docs, CI, `--format json`, `--judge` flag
-- [ ] **Pending**: an actual live `demo:run` against Claude, then manually labeling a
-      real golden set and running `evaluate` to get real precision/recall numbers.
-      Deferred until an `ANTHROPIC_API_KEY` is set up — see `docs/evaluation-methodology.md`
-      for exactly what running it will produce.
+- [x] Live runs, labeled golden sets and a held-out test. On 24 unseen tickets the
+      claim verifier caught 5 of 6 bad replies (supervisor agent: 1 of 6), with 7 false
+      alarms on 18 good replies. It's a filter in front of a human, not an autonomous
+      judge. See [`docs/evaluation-methodology.md`](./docs/evaluation-methodology.md#measured-results).
 - [ ] Session 5 (stretch, not started) — MCP server, minimal dashboard
 
 ## Quickstart
@@ -75,9 +75,11 @@ npm run cli -- demo:run                              # ~26 tickets x 3 agents on
 npm run cli -- demo:report                           # raw per-ticket summary
 npm run cli -- demo:report --format json             # same data as JSON
 
-# after manually labeling tests/fixtures/goldenSet.json:
-npm run cli -- evaluate --golden tests/fixtures/goldenSet.json
-npm run cli -- evaluate --golden tests/fixtures/goldenSet.json --judge   # LLM-judge instead of rules, costs extra API calls
+# with the labeled tests/fixtures/goldenSet.json:
+npm run cli -- evaluate --golden tests/fixtures/goldenSet.json --traces tests/fixtures/traces/dev
+npm run cli -- evaluate --golden tests/fixtures/goldenSet.json --traces tests/fixtures/traces/dev --judge
+npm run cli -- evaluate --golden tests/fixtures/goldenHeldOut.json --traces tests/fixtures/traces/heldout --verify --cache tests/fixtures/verdicts.json
+npm run gate   # quality gate on stored verdicts, free, also runs in CI
 ```
 
 ## Development
@@ -101,8 +103,10 @@ manually from the Actions tab, since it calls the real API.
   toolchain (`vite`, `esbuild`). None are reachable here — nothing in this project
   parses untrusted protobuf data or exposes a dev server — but they're worth knowing
   about rather than silently ignoring.
-- The rule-based categorizer's thresholds (`src/evaluation/rules.ts`) are starting
-  guesses, not yet tuned against a real golden set (see the pending item above).
+- The claim verifier flags too many good replies (7 of 18 on the held-out set).
+- Held-out labels were proposed by an AI assistant and reviewed by the author, with a
+  single reviewer and only 24 tickets.
+- The rule categorizer catches little without the verifier. It stays as a free check.
 
 ## License
 

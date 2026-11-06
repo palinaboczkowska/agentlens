@@ -1,0 +1,152 @@
+{
+  "ticketId": "t-17",
+  "runId": "18ef951d-f19f-46a3-8ab8-fe1035dc2ba6",
+  "createdAt": "2026-11-06T08:01:39.797Z",
+  "steps": [
+    {
+      "agentName": "classifier",
+      "input": {
+        "ticket": {
+          "id": "t-17",
+          "subject": "Which browsers do you support?",
+          "body": "Quick question before I roll this out to my team — which browsers are officially supported?"
+        }
+      },
+      "toolCalls": [],
+      "startedAt": "2026-11-06T08:01:32.529Z",
+      "endedAt": "2026-11-06T08:01:34.216Z",
+      "durationMs": 1687,
+      "rawOutput": {
+        "category": "other",
+        "urgency": "low",
+        "confidenceNote": "This is a general product question/inquiry rather than a problem with billing, technical functionality, account access, or a feature request. Could potentially be classified as feature-request if interpreted as asking about browser support as a feature, but it reads more like a straightforward informational question. Low urgency as it's not blocking the customer but they do mention planning a rollout."
+      },
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "usage": {
+        "inputTokens": 339,
+        "outputTokens": 99
+      },
+      "stopReason": "end_turn"
+    },
+    {
+      "agentName": "drafting",
+      "input": {
+        "ticket": {
+          "id": "t-17",
+          "subject": "Which browsers do you support?",
+          "body": "Quick question before I roll this out to my team — which browsers are officially supported?"
+        },
+        "classification": {
+          "category": "other",
+          "urgency": "low",
+          "confidenceNote": "This is a general product question/inquiry rather than a problem with billing, technical functionality, account access, or a feature request. Could potentially be classified as feature-request if interpreted as asking about browser support as a feature, but it reads more like a straightforward informational question. Low urgency as it's not blocking the customer but they do mention planning a rollout."
+        }
+      },
+      "toolCalls": [
+        {
+          "toolName": "search_kb",
+          "input": {
+            "query": "supported browsers"
+          },
+          "output": [
+            {
+              "docId": "kb-014",
+              "title": "Supported browsers",
+              "content": "The web app officially supports the latest two versions of Chrome, Firefox, Edge, and Safari. Internet Explorer is not supported. Some layout issues may appear on unsupported browsers.",
+              "score": 0.7734859299795683
+            },
+            {
+              "docId": "kb-008",
+              "title": "API rate limits",
+              "content": "The API allows 100 requests per minute on the Free and Pro plans, and 1000 requests per minute on the Enterprise plan. Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+              "score": 0.09853913035360616
+            },
+            {
+              "docId": "kb-005",
+              "title": "Exporting reports to PDF (macOS)",
+              "content": "On macOS, the in-app 'Export to PDF' button can crash the app on some versions. Workaround: use File > Print, then choose 'Save as PDF' from the system print dialog instead of the in-app export button. A permanent fix is planned but not yet released.",
+              "score": 0.09173505761585109
+            }
+          ],
+          "latencyMs": 4,
+          "isError": false,
+          "retrievedDocs": [
+            {
+              "docId": "kb-014",
+              "score": 0.7734859299795683
+            },
+            {
+              "docId": "kb-008",
+              "score": 0.09853913035360616
+            },
+            {
+              "docId": "kb-005",
+              "score": 0.09173505761585109
+            }
+          ]
+        }
+      ],
+      "startedAt": "2026-11-06T08:01:34.216Z",
+      "endedAt": "2026-11-06T08:01:37.044Z",
+      "durationMs": 2828,
+      "rawOutput": "Perfect! I found the relevant information. Here's a reply:\n\n---\n\nThanks for checking before rolling out to your team — that's great planning!\n\nWe officially support the **latest two versions** of:\n- Chrome\n- Firefox\n- Edge\n- Safari\n\n**Internet Explorer is not supported.** You may also encounter some layout issues if you use unsupported browsers.\n\nLet me know if you have any other questions as you prepare for the rollout!",
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "usage": {
+        "inputTokens": 1188,
+        "outputTokens": 100
+      },
+      "stopReason": "end_turn"
+    },
+    {
+      "agentName": "supervisor",
+      "input": {
+        "ticket": {
+          "id": "t-17",
+          "subject": "Which browsers do you support?",
+          "body": "Quick question before I roll this out to my team — which browsers are officially supported?"
+        },
+        "classification": {
+          "category": "other",
+          "urgency": "low",
+          "confidenceNote": "This is a general product question/inquiry rather than a problem with billing, technical functionality, account access, or a feature request. Could potentially be classified as feature-request if interpreted as asking about browser support as a feature, but it reads more like a straightforward informational question. Low urgency as it's not blocking the customer but they do mention planning a rollout."
+        },
+        "draft": "Perfect! I found the relevant information. Here's a reply:\n\n---\n\nThanks for checking before rolling out to your team — that's great planning!\n\nWe officially support the **latest two versions** of:\n- Chrome\n- Firefox\n- Edge\n- Safari\n\n**Internet Explorer is not supported.** You may also encounter some layout issues if you use unsupported browsers.\n\nLet me know if you have any other questions as you prepare for the rollout!",
+        "retrievedDocs": [
+          {
+            "docId": "kb-014",
+            "title": "Supported browsers",
+            "content": "The web app officially supports the latest two versions of Chrome, Firefox, Edge, and Safari. Internet Explorer is not supported. Some layout issues may appear on unsupported browsers.",
+            "score": 0.7734859299795683
+          },
+          {
+            "docId": "kb-008",
+            "title": "API rate limits",
+            "content": "The API allows 100 requests per minute on the Free and Pro plans, and 1000 requests per minute on the Enterprise plan. Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+            "score": 0.09853913035360616
+          },
+          {
+            "docId": "kb-005",
+            "title": "Exporting reports to PDF (macOS)",
+            "content": "On macOS, the in-app 'Export to PDF' button can crash the app on some versions. Workaround: use File > Print, then choose 'Save as PDF' from the system print dialog instead of the in-app export button. A permanent fix is planned but not yet released.",
+            "score": 0.09173505761585109
+          }
+        ]
+      },
+      "toolCalls": [],
+      "startedAt": "2026-11-06T08:01:37.044Z",
+      "endedAt": "2026-11-06T08:01:39.797Z",
+      "durationMs": 2753,
+      "rawOutput": {
+        "verdict": "approve",
+        "groundednessCheck": "All claims in the draft reply are directly grounded in the retrieved knowledge base content (kb-014). The draft states: (1) support for latest two versions of Chrome, Firefox, Edge, and Safari - directly from kb-014; (2) Internet Explorer is not supported - directly from kb-014; (3) layout issues may appear on unsupported browsers - directly from kb-014. No claims extend beyond what is documented.",
+        "rationale": "The draft reply accurately and completely answers the customer's question using only information from the most relevant retrieved document (kb-014 with high relevance score of 0.77). The tone is professional and helpful, the information is precise, and all statements are grounded in the knowledge base. The other two retrieved documents (kb-008 on API rate limits and kb-005 on PDF export issues) are not relevant to browser support and were appropriately ignored."
+      },
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "usage": {
+        "inputTokens": 756,
+        "outputTokens": 206
+      },
+      "stopReason": "end_turn"
+    }
+  ]
+}

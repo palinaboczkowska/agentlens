@@ -1,0 +1,206 @@
+{
+  "ticketId": "h-12",
+  "runId": "7768135b-f533-4d84-9c0e-7d3821289a80",
+  "createdAt": "2026-11-06T08:34:33.995Z",
+  "steps": [
+    {
+      "agentName": "classifier",
+      "input": {
+        "ticket": {
+          "id": "h-12",
+          "subject": "Android notifications off",
+          "body": "I turned on notifications inside the app but my Android phone never shows them."
+        }
+      },
+      "toolCalls": [],
+      "startedAt": "2026-11-06T08:34:23.723Z",
+      "endedAt": "2026-11-06T08:34:25.396Z",
+      "durationMs": 1673,
+      "rawOutput": {
+        "category": "technical-bug",
+        "urgency": "medium",
+        "confidenceNote": "This is clearly a technical issue with notification delivery on Android. Urgency is medium because notifications are important for app functionality but the app itself appears to be working. There is minimal ambiguity here - the user has configured notifications but they're not being delivered."
+      },
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "usage": {
+        "inputTokens": 334,
+        "outputTokens": 73
+      },
+      "stopReason": "end_turn"
+    },
+    {
+      "agentName": "drafting",
+      "input": {
+        "ticket": {
+          "id": "h-12",
+          "subject": "Android notifications off",
+          "body": "I turned on notifications inside the app but my Android phone never shows them."
+        },
+        "classification": {
+          "category": "technical-bug",
+          "urgency": "medium",
+          "confidenceNote": "This is clearly a technical issue with notification delivery on Android. Urgency is medium because notifications are important for app functionality but the app itself appears to be working. There is minimal ambiguity here - the user has configured notifications but they're not being delivered."
+        }
+      },
+      "toolCalls": [
+        {
+          "toolName": "search_kb",
+          "input": {
+            "query": "Android notifications not showing not working"
+          },
+          "output": [
+            {
+              "docId": "kb-003",
+              "title": "Refund policy — duplicate charges",
+              "content": "Duplicate charges caused by a billing system error are refunded automatically within 5 business days. No ticket is required, but you're welcome to ask support to confirm a specific refund is in progress.",
+              "score": -0.03216941262226347
+            },
+            {
+              "docId": "kb-011",
+              "title": "Upgrading from Free to Pro plan",
+              "content": "Upgrade from Account Settings > Billing > Change Plan. The Pro plan is billed immediately on a prorated basis for the remainder of your current billing cycle, then at the full rate from the next cycle onward.",
+              "score": -0.033690818467766365
+            },
+            {
+              "docId": "kb-013",
+              "title": "Adding and removing team members",
+              "content": "Admins can add or remove team members from Account Settings > Team. Removing a member immediately revokes their access; there is no confirmation delay. Each member's role (Admin, Editor, Viewer) can be changed from the same screen.",
+              "score": -0.05023417357027242
+            }
+          ],
+          "latencyMs": 10,
+          "isError": false,
+          "retrievedDocs": [
+            {
+              "docId": "kb-003",
+              "score": -0.03216941262226347
+            },
+            {
+              "docId": "kb-011",
+              "score": -0.033690818467766365
+            },
+            {
+              "docId": "kb-013",
+              "score": -0.05023417357027242
+            }
+          ]
+        },
+        {
+          "toolName": "search_kb",
+          "input": {
+            "query": "Android phone notification settings permissions"
+          },
+          "output": [
+            {
+              "docId": "kb-014",
+              "title": "Supported browsers",
+              "content": "The web app officially supports the latest two versions of Chrome, Firefox, Edge, and Safari. Internet Explorer is not supported. Some layout issues may appear on unsupported browsers.",
+              "score": -0.030394609492001002
+            },
+            {
+              "docId": "kb-003",
+              "title": "Refund policy — duplicate charges",
+              "content": "Duplicate charges caused by a billing system error are refunded automatically within 5 business days. No ticket is required, but you're welcome to ask support to confirm a specific refund is in progress.",
+              "score": -0.046491894935661596
+            },
+            {
+              "docId": "kb-012",
+              "title": "Known issue: dashboard slow to load with 10,000+ rows",
+              "content": "Dashboards with more than 10,000 rows currently load slowly because pagination is not yet applied server-side. Workaround: filter the dashboard by date range to reduce the row count. A server-side pagination fix is on the roadmap but has no committed release date.",
+              "score": -0.08495766714569142
+            }
+          ],
+          "latencyMs": 10,
+          "isError": false,
+          "retrievedDocs": [
+            {
+              "docId": "kb-014",
+              "score": -0.030394609492001002
+            },
+            {
+              "docId": "kb-003",
+              "score": -0.046491894935661596
+            },
+            {
+              "docId": "kb-012",
+              "score": -0.08495766714569142
+            }
+          ]
+        }
+      ],
+      "startedAt": "2026-11-06T08:34:25.396Z",
+      "endedAt": "2026-11-06T08:34:29.630Z",
+      "durationMs": 4234,
+      "rawOutput": "The knowledge base search didn't return any articles specifically about Android notification troubleshooting. Let me provide a helpful response based on common notification issues while being honest about what I can and cannot confirm:\n\n---\n\nThanks for reaching out. I'm sorry you're not receiving notifications on your Android phone even though you've enabled them in the app.\n\nI searched our knowledge base but didn't find specific documentation about Android notification delivery on our end. To help narrow down the issue, here are a few things to check:\n\n1. **Android phone notification settings** — Make sure notifications are enabled at the system level for our app. You can usually find this in Settings > Apps > [App Name] > Notifications.\n\n2. **App permissions** — Verify that the app has been granted notification permission. On Android 13 and later, this is handled through system permissions rather than just app settings.\n\n3. **Battery and background settings** — Check if your phone's battery saver or app management settings are restricting background activity for our app.\n\nIf you've checked these and notifications still aren't working, please let me know what Android version you're running and whether you see any error messages. That information will help me investigate further.",
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "usage": {
+        "inputTokens": 1534,
+        "outputTokens": 258
+      },
+      "stopReason": "end_turn"
+    },
+    {
+      "agentName": "supervisor",
+      "input": {
+        "ticket": {
+          "id": "h-12",
+          "subject": "Android notifications off",
+          "body": "I turned on notifications inside the app but my Android phone never shows them."
+        },
+        "classification": {
+          "category": "technical-bug",
+          "urgency": "medium",
+          "confidenceNote": "This is clearly a technical issue with notification delivery on Android. Urgency is medium because notifications are important for app functionality but the app itself appears to be working. There is minimal ambiguity here - the user has configured notifications but they're not being delivered."
+        },
+        "draft": "The knowledge base search didn't return any articles specifically about Android notification troubleshooting. Let me provide a helpful response based on common notification issues while being honest about what I can and cannot confirm:\n\n---\n\nThanks for reaching out. I'm sorry you're not receiving notifications on your Android phone even though you've enabled them in the app.\n\nI searched our knowledge base but didn't find specific documentation about Android notification delivery on our end. To help narrow down the issue, here are a few things to check:\n\n1. **Android phone notification settings** — Make sure notifications are enabled at the system level for our app. You can usually find this in Settings > Apps > [App Name] > Notifications.\n\n2. **App permissions** — Verify that the app has been granted notification permission. On Android 13 and later, this is handled through system permissions rather than just app settings.\n\n3. **Battery and background settings** — Check if your phone's battery saver or app management settings are restricting background activity for our app.\n\nIf you've checked these and notifications still aren't working, please let me know what Android version you're running and whether you see any error messages. That information will help me investigate further.",
+        "retrievedDocs": [
+          {
+            "docId": "kb-014",
+            "title": "Supported browsers",
+            "content": "The web app officially supports the latest two versions of Chrome, Firefox, Edge, and Safari. Internet Explorer is not supported. Some layout issues may appear on unsupported browsers.",
+            "score": -0.030394609492001002
+          },
+          {
+            "docId": "kb-003",
+            "title": "Refund policy — duplicate charges",
+            "content": "Duplicate charges caused by a billing system error are refunded automatically within 5 business days. No ticket is required, but you're welcome to ask support to confirm a specific refund is in progress.",
+            "score": -0.03216941262226347
+          },
+          {
+            "docId": "kb-011",
+            "title": "Upgrading from Free to Pro plan",
+            "content": "Upgrade from Account Settings > Billing > Change Plan. The Pro plan is billed immediately on a prorated basis for the remainder of your current billing cycle, then at the full rate from the next cycle onward.",
+            "score": -0.033690818467766365
+          },
+          {
+            "docId": "kb-013",
+            "title": "Adding and removing team members",
+            "content": "Admins can add or remove team members from Account Settings > Team. Removing a member immediately revokes their access; there is no confirmation delay. Each member's role (Admin, Editor, Viewer) can be changed from the same screen.",
+            "score": -0.05023417357027242
+          },
+          {
+            "docId": "kb-012",
+            "title": "Known issue: dashboard slow to load with 10,000+ rows",
+            "content": "Dashboards with more than 10,000 rows currently load slowly because pagination is not yet applied server-side. Workaround: filter the dashboard by date range to reduce the row count. A server-side pagination fix is on the roadmap but has no committed release date.",
+            "score": -0.08495766714569142
+          }
+        ]
+      },
+      "toolCalls": [],
+      "startedAt": "2026-11-06T08:34:29.630Z",
+      "endedAt": "2026-11-06T08:34:33.994Z",
+      "durationMs": 4364,
+      "rawOutput": {
+        "verdict": "approve",
+        "groundednessCheck": "The draft reply contains no claims that contradict or go beyond the retrieved knowledge base content. The response appropriately acknowledges that no relevant KB articles were found and provides generic troubleshooting steps that are standard Android notification diagnostics. These suggestions (checking system-level notification settings, app permissions, and battery/background restrictions) are common troubleshooting approaches that do not require specific grounding in the knowledge base. The response is honest about the limitations of available documentation and appropriately requests additional information to help diagnose the issue.",
+        "rationale": "The draft response is grounded and appropriate because: (1) it correctly states that the knowledge base search found no relevant articles on this topic, (2) it provides only standard, universally-applicable Android troubleshooting steps rather than making specific claims about the app's behavior or features, (3) it avoids making unsupported claims about what the app does or doesn't do, and (4) it honestly communicates the need for more information from the user. The response demonstrates good support practice by being transparent about knowledge limitations while still providing helpful general guidance."
+      },
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "usage": {
+        "inputTokens": 1048,
+        "outputTokens": 245
+      },
+      "stopReason": "end_turn"
+    }
+  ]
+}

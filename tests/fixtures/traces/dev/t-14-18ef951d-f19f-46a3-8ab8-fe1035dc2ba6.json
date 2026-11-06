@@ -1,0 +1,152 @@
+{
+  "ticketId": "t-14",
+  "runId": "18ef951d-f19f-46a3-8ab8-fe1035dc2ba6",
+  "createdAt": "2026-11-06T08:01:13.656Z",
+  "steps": [
+    {
+      "agentName": "classifier",
+      "input": {
+        "ticket": {
+          "id": "t-14",
+          "subject": "How do I turn on two-factor authentication",
+          "body": "I want to add 2FA to my account for security. Where do I set that up?"
+        }
+      },
+      "toolCalls": [],
+      "startedAt": "2026-11-06T08:01:04.422Z",
+      "endedAt": "2026-11-06T08:01:05.899Z",
+      "durationMs": 1477,
+      "rawOutput": {
+        "category": "account-access",
+        "urgency": "low",
+        "confidenceNote": "This is a straightforward feature request about account security settings. Classified as account-access rather than feature-request because the customer is asking how to use an existing feature. Urgency is low because this is a standard request with no indication of a security breach or time-sensitive issue."
+      },
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "usage": {
+        "inputTokens": 345,
+        "outputTokens": 84
+      },
+      "stopReason": "end_turn"
+    },
+    {
+      "agentName": "drafting",
+      "input": {
+        "ticket": {
+          "id": "t-14",
+          "subject": "How do I turn on two-factor authentication",
+          "body": "I want to add 2FA to my account for security. Where do I set that up?"
+        },
+        "classification": {
+          "category": "account-access",
+          "urgency": "low",
+          "confidenceNote": "This is a straightforward feature request about account security settings. Classified as account-access rather than feature-request because the customer is asking how to use an existing feature. Urgency is low because this is a standard request with no indication of a security breach or time-sensitive issue."
+        }
+      },
+      "toolCalls": [
+        {
+          "toolName": "search_kb",
+          "input": {
+            "query": "two-factor authentication 2FA enable setup account"
+          },
+          "output": [
+            {
+              "docId": "kb-006",
+              "title": "Two-factor authentication setup",
+              "content": "Enable two-factor authentication from Account Settings > Security > Two-Factor Authentication. Scan the QR code with an authenticator app (e.g. Google Authenticator, Authy) and enter the 6-digit code to confirm setup. Save the backup codes shown at the end in a safe place.",
+              "score": 0.5566637707522909
+            },
+            {
+              "docId": "kb-002",
+              "title": "Account locked — suspicious activity flag",
+              "content": "If your account was locked due to a suspicious-activity flag (unusual location, new device, or an admin-triggered security hold), it cannot be unlocked by resetting your password. You must contact support directly so an agent can verify your identity manually before restoring access.",
+              "score": 0.2887449698779346
+            },
+            {
+              "docId": "kb-001",
+              "title": "Account locked — too many failed login attempts",
+              "content": "If your account is locked after several incorrect password attempts, wait 30 minutes and try again, or use the 'Forgot password' link on the login page to reset your password immediately via an emailed link. This is fully self-service — no need to contact support.",
+              "score": 0.26333921163435786
+            }
+          ],
+          "latencyMs": 4,
+          "isError": false,
+          "retrievedDocs": [
+            {
+              "docId": "kb-006",
+              "score": 0.5566637707522909
+            },
+            {
+              "docId": "kb-002",
+              "score": 0.2887449698779346
+            },
+            {
+              "docId": "kb-001",
+              "score": 0.26333921163435786
+            }
+          ]
+        }
+      ],
+      "startedAt": "2026-11-06T08:01:05.899Z",
+      "endedAt": "2026-11-06T08:01:09.941Z",
+      "durationMs": 4042,
+      "rawOutput": "Perfect! I found relevant information. Here's my reply:\n\n---\n\n**Subject: Re: How do I turn on two-factor authentication**\n\nThanks for taking that extra step to secure your account! Here's how to set up two-factor authentication:\n\n1. Go to **Account Settings > Security > Two-Factor Authentication**\n2. Scan the QR code with an authenticator app (such as Google Authenticator or Authy)\n3. Enter the 6-digit code from your authenticator app to confirm setup\n4. **Save the backup codes** that appear at the end in a safe location — you'll need these if you lose access to your authenticator app\n\nOnce you've completed these steps, two-factor authentication will be active on your account. Let us know if you run into any issues during setup!",
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "usage": {
+        "inputTokens": 1223,
+        "outputTokens": 179
+      },
+      "stopReason": "end_turn"
+    },
+    {
+      "agentName": "supervisor",
+      "input": {
+        "ticket": {
+          "id": "t-14",
+          "subject": "How do I turn on two-factor authentication",
+          "body": "I want to add 2FA to my account for security. Where do I set that up?"
+        },
+        "classification": {
+          "category": "account-access",
+          "urgency": "low",
+          "confidenceNote": "This is a straightforward feature request about account security settings. Classified as account-access rather than feature-request because the customer is asking how to use an existing feature. Urgency is low because this is a standard request with no indication of a security breach or time-sensitive issue."
+        },
+        "draft": "Perfect! I found relevant information. Here's my reply:\n\n---\n\n**Subject: Re: How do I turn on two-factor authentication**\n\nThanks for taking that extra step to secure your account! Here's how to set up two-factor authentication:\n\n1. Go to **Account Settings > Security > Two-Factor Authentication**\n2. Scan the QR code with an authenticator app (such as Google Authenticator or Authy)\n3. Enter the 6-digit code from your authenticator app to confirm setup\n4. **Save the backup codes** that appear at the end in a safe location — you'll need these if you lose access to your authenticator app\n\nOnce you've completed these steps, two-factor authentication will be active on your account. Let us know if you run into any issues during setup!",
+        "retrievedDocs": [
+          {
+            "docId": "kb-006",
+            "title": "Two-factor authentication setup",
+            "content": "Enable two-factor authentication from Account Settings > Security > Two-Factor Authentication. Scan the QR code with an authenticator app (e.g. Google Authenticator, Authy) and enter the 6-digit code to confirm setup. Save the backup codes shown at the end in a safe place.",
+            "score": 0.5566637707522909
+          },
+          {
+            "docId": "kb-002",
+            "title": "Account locked — suspicious activity flag",
+            "content": "If your account was locked due to a suspicious-activity flag (unusual location, new device, or an admin-triggered security hold), it cannot be unlocked by resetting your password. You must contact support directly so an agent can verify your identity manually before restoring access.",
+            "score": 0.2887449698779346
+          },
+          {
+            "docId": "kb-001",
+            "title": "Account locked — too many failed login attempts",
+            "content": "If your account is locked after several incorrect password attempts, wait 30 minutes and try again, or use the 'Forgot password' link on the login page to reset your password immediately via an emailed link. This is fully self-service — no need to contact support.",
+            "score": 0.26333921163435786
+          }
+        ]
+      },
+      "toolCalls": [],
+      "startedAt": "2026-11-06T08:01:09.941Z",
+      "endedAt": "2026-11-06T08:01:13.656Z",
+      "durationMs": 3715,
+      "rawOutput": {
+        "verdict": "approve",
+        "groundednessCheck": "Every claim in the draft reply is directly grounded in the retrieved knowledge base content from kb-006: (1) The navigation path 'Account Settings > Security > Two-Factor Authentication' is explicitly stated; (2) Scanning the QR code with an authenticator app is mentioned, with the same examples (Google Authenticator, Authy) provided; (3) Entering the 6-digit code to confirm setup is directly quoted; (4) Saving backup codes in a safe place is explicitly mentioned in the source material. The draft appropriately rephrases the technical content in a user-friendly manner while maintaining accuracy.",
+        "rationale": "The draft reply is well-grounded and appropriate. All instructions provided correspond exactly to the content in kb-006, which is the most relevant document (highest relevance score of 0.557). The response directly addresses the customer's question with clear, actionable steps. The tone is helpful and encouraging without adding unsupported claims. The other retrieved documents (kb-001 and kb-002) are not relevant to this ticket as they address account lockout scenarios, which is not applicable here. The reply appropriately avoids information from these irrelevant documents."
+      },
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "usage": {
+        "inputTokens": 859,
+        "outputTokens": 270
+      },
+      "stopReason": "end_turn"
+    }
+  ]
+}

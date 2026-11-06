@@ -1,0 +1,2578 @@
+{
+  "t-01:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Duplicate charges caused by a billing system error are refunded automatically within 5 business days.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Duplicate charges caused by a billing system error are refunded automatically within 5 business days.",
+        "evidenceSource": "kb-003",
+        "note": "Accurately restates the policy."
+      },
+      {
+        "claim": "No action is required from the customer, though support can help confirm the refund status.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "No ticket is required, but you're welcome to ask support to confirm a specific refund is in progress.",
+        "evidenceSource": "kb-003",
+        "note": "A fair paraphrase of the article."
+      },
+      {
+        "claim": "Because the two charges are identical and one day apart, this is a billing system error, and the extra charge will be refunded automatically within 5 business days of when it was made.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "Duplicate charges caused by a billing system error are refunded automatically",
+        "evidenceSource": "kb-003",
+        "note": "The article covers only charges caused by a billing system error. Nothing establishes that this customer's charges were one. The draft also starts the 5 business days from the charge date, which the source doesn't say."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-02:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "We do not issue partial refunds for unused days in the current billing period.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "We do not issue partial refunds for unused days in the current period.",
+        "evidenceSource": "kb-004",
+        "note": "Directly answers the refund request."
+      },
+      {
+        "claim": "Your subscription will continue to be active and charged through the end of your current billing cycle, regardless of when you cancel.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Cancellation takes effect at the end of your current billing period.",
+        "evidenceSource": "kb-004",
+        "note": "A close paraphrase of when cancellation takes effect."
+      },
+      {
+        "claim": "You can cancel your subscription at any time from Account Settings > Billing.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "You can cancel your subscription at any time from Account Settings > Billing.",
+        "evidenceSource": "kb-004",
+        "note": "The UI path matches the article."
+      },
+      {
+        "claim": "Once cancelled, your subscription will remain active through the end of your current billing period.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Cancellation takes effect at the end of your current billing period.",
+        "evidenceSource": "kb-004",
+        "note": "Paraphrase of the article."
+      },
+      {
+        "claim": "You will not be charged for any future periods after cancelling.",
+        "verdict": "unjustified-inference",
+        "severity": "minor",
+        "evidenceQuote": "Cancellation takes effect at the end of your current billing period.",
+        "evidenceSource": "kb-004",
+        "note": "The article doesn't state this, but it is a plainly implied consequence of cancellation."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-03:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "When you upgrade from Free to Pro, the charge is prorated for the remainder of your current billing cycle.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "billed immediately on a prorated basis for the remainder of your current billing cycle",
+        "evidenceSource": "kb-011",
+        "note": ""
+      },
+      {
+        "claim": "You'll be charged a reduced amount right away based on how many days are left in your billing period.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "billed immediately on a prorated basis",
+        "evidenceSource": "kb-011",
+        "note": "Reasonable paraphrase of proration. The day-based calculation is plainly implied by the source."
+      },
+      {
+        "claim": "Starting with your next billing cycle, you'll be charged the full Pro plan rate.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "then at the full rate from the next cycle onward",
+        "evidenceSource": "kb-011",
+        "note": ""
+      },
+      {
+        "claim": "You can upgrade from Account Settings > Billing > Change Plan.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Upgrade from Account Settings > Billing > Change Plan.",
+        "evidenceSource": "kb-011",
+        "note": ""
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-04:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Invoice email is changed at Account Settings > Billing > Billing Contact by updating the email field",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "go to Account Settings > Billing > Billing Contact and update the email field",
+        "evidenceSource": "kb-007",
+        "note": "Matches the article exactly."
+      },
+      {
+        "claim": "Save the changes",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source mentions a save button, but anyone editing a field would look for one anyway, so this is harmless."
+      },
+      {
+        "claim": "This changes where invoices are sent while keeping the login email unchanged",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "This does not change your login email.",
+        "evidenceSource": "kb-007",
+        "note": "Directly stated in the article."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-05:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "The customer's billing currency setting can be checked in Account Settings > Billing.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "Articles cite Account Settings > Billing for plan changes, billing contact and cancellation, but none says a billing currency setting exists or is shown there."
+      },
+      {
+        "claim": "Support will ensure the customer is billed correctly going forward and will get this sorted.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "This is a guaranteed outcome that no source supports, since the cause of the currency change is unknown."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-06:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "The in-app 'Export to PDF' button is known to crash the app on some macOS versions.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "On macOS, the in-app 'Export to PDF' button can crash the app on some versions.",
+        "evidenceSource": "kb-005",
+        "note": "The source states this directly."
+      },
+      {
+        "claim": "This known issue matches exactly what the customer is experiencing.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "the in-app 'Export to PDF' button can crash the app on some versions",
+        "evidenceSource": "kb-005",
+        "note": "The customer describes a freeze on export on macOS, which matches the known issue. This is a reasonable match."
+      },
+      {
+        "claim": "Workaround: use File > Print, then choose Save as PDF from the system print dialog.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "use File > Print, then choose 'Save as PDF' from the system print dialog",
+        "evidenceSource": "kb-005",
+        "note": "The draft gives the same steps as the article."
+      },
+      {
+        "claim": "The workaround bypasses the in-app button and should let the customer save as PDF without freezing.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "instead of the in-app export button",
+        "evidenceSource": "kb-005",
+        "note": "This is a hedged 'should' about the fix the article gives for this exact situation."
+      },
+      {
+        "claim": "A permanent fix is planned, with no specific release date to share.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "A permanent fix is planned but not yet released.",
+        "evidenceSource": "kb-005",
+        "note": "The article supports this. The draft makes no date commitment."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-07:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "We're aware of a PDF export crash problem that's affecting multiple users",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "the in-app 'Export to PDF' button can crash the app on some versions",
+        "evidenceSource": "kb-005",
+        "note": "The article documents a known crash, but only on macOS. The draft openly says the documentation focuses on macOS."
+      },
+      {
+        "claim": "Workaround: use File > Print and select Save as PDF from the system print dialog instead of the in-app export button",
+        "verdict": "unjustified-inference",
+        "severity": "minor",
+        "evidenceQuote": "Workaround: use File > Print, then choose 'Save as PDF' from the system print dialog instead of the in-app export button.",
+        "evidenceSource": "kb-005",
+        "note": "The workaround is documented for macOS only. The draft hedges it with 'may help' for Windows, says the docs cover macOS, and asks the customer to confirm whether it works, so the risk is low."
+      },
+      {
+        "claim": "A permanent fix is planned, with no specific timeline yet",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "A permanent fix is planned but not yet released.",
+        "evidenceSource": "kb-005",
+        "note": "The planned fix is for the macOS crash. The article does not establish that a fix is planned for the Windows crash."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-08:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Dashboards with more than 10,000 rows currently load slowly because server-side pagination has not yet been implemented.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Dashboards with more than 10,000 rows currently load slowly because pagination is not yet applied server-side.",
+        "evidenceSource": "kb-012",
+        "note": "Hedged with 'may be affecting'; the draft does not assert it as fact for this customer."
+      },
+      {
+        "claim": "Filtering the dashboard by date range to reduce the row count is a workaround that should improve load times significantly.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Workaround: filter the dashboard by date range to reduce the row count.",
+        "evidenceSource": "kb-012",
+        "note": "'Significantly' is a soft paraphrase about the workaround the source gives for this exact situation."
+      },
+      {
+        "claim": "Server-side pagination is on the roadmap, with no committed release date.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "A server-side pagination fix is on the roadmap but has no committed release date.",
+        "evidenceSource": "kb-012",
+        "note": ""
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-09:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "The most common cause is that OS-level notification permissions for the app may have been disabled.",
+        "verdict": "unjustified-inference",
+        "severity": "minor",
+        "evidenceQuote": "first check that notifications are allowed for the app in your phone's OS-level settings",
+        "evidenceSource": "kb-009",
+        "note": "The article says to check this first. It does not say it is the most common cause. The claim is hedged, so the impact is low."
+      },
+      {
+        "claim": "Even if in-app notification settings are on, the app needs OS-level permission to deliver notifications.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "In-app notification toggles only work if OS-level permission is also granted.",
+        "evidenceSource": "kb-009",
+        "note": ""
+      },
+      {
+        "claim": "On iOS, go to Settings > Notifications to allow notifications for the app.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Settings > Notifications on iOS",
+        "evidenceSource": "kb-009",
+        "note": ""
+      },
+      {
+        "claim": "On Android, go to App info > Notifications to enable notifications.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "App info > Notifications on Android",
+        "evidenceSource": "kb-009",
+        "note": ""
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-10:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "With the requested details, support will find either a solution or a workaround for the customer right away.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "This guarantees an outcome and a timeline that no source supports. Some known issues, such as kb-012 and kb-005, have no committed fix date, and an unknown issue may have no workaround at all."
+      },
+      {
+        "claim": "Support will prioritize getting the customer back up and running.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "This is a customary follow-up line with no specific time or outcome."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-11:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Using the 'Forgot password' link on the login page sends an emailed reset link you can use immediately to regain access, with no support contact needed.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "use the 'Forgot password' link on the login page to reset your password immediately via an emailed link. This is fully self-service — no need to contact support.",
+        "evidenceSource": "kb-001",
+        "note": "Matches kb-001 for a lock caused by wrong password attempts, which is what the ticket describes."
+      },
+      {
+        "claim": "The account will automatically unlock after 30 minutes, after which the customer can try logging in again.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "wait 30 minutes and try again",
+        "evidenceSource": "kb-001",
+        "note": "kb-001 says to wait 30 minutes and try again. Describing that as an automatic unlock is a fair paraphrase."
+      },
+      {
+        "claim": "The customer should be able to access the account right away after using the reset link.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "reset your password immediately via an emailed link",
+        "evidenceSource": "kb-001",
+        "note": "This follows directly from kb-001 for the wrong-password lockout situation."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-12:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Accounts locked for suspicious activity cannot be unlocked by resetting your password.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "it cannot be unlocked by resetting your password",
+        "evidenceSource": "kb-002",
+        "note": ""
+      },
+      {
+        "claim": "Suspicious-activity flags can happen with logins from new devices or locations.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "unusual location, new device, or an admin-triggered security hold",
+        "evidenceSource": "kb-002",
+        "note": ""
+      },
+      {
+        "claim": "The customer's account was locked due to a suspicious-activity flag.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "my account was locked due to suspicious activity",
+        "evidenceSource": "ticket",
+        "note": "Stated by the customer in the ticket."
+      },
+      {
+        "claim": "You need to contact support directly so an agent can verify your identity manually and restore access.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "You must contact support directly so an agent can verify your identity manually before restoring access.",
+        "evidenceSource": "kb-002",
+        "note": ""
+      },
+      {
+        "claim": "Support will ask you to confirm some account details to verify it's really you.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "verify your identity manually",
+        "evidenceSource": "kb-002",
+        "note": "A soft paraphrase of manual identity verification."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-13:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "If locked due to failed password attempts, wait 30 minutes and try again",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "wait 30 minutes and try again",
+        "evidenceSource": "kb-001",
+        "note": ""
+      },
+      {
+        "claim": "Use the 'Forgot password' link on the login page to reset immediately via email link; fully self-service",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "use the 'Forgot password' link on the login page to reset your password immediately via an emailed link. This is fully self-service",
+        "evidenceSource": "kb-001",
+        "note": ""
+      },
+      {
+        "claim": "If locked due to a security flag (unusual location, new device, security hold), customer must contact support to verify identity manually before access is restored",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "You must contact support directly so an agent can verify your identity manually before restoring access.",
+        "evidenceSource": "kb-002",
+        "note": ""
+      },
+      {
+        "claim": "For a security-flag lockout, a password reset won't work",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "it cannot be unlocked by resetting your password",
+        "evidenceSource": "kb-002",
+        "note": ""
+      },
+      {
+        "claim": "Account lockouts happen for one of two reasons",
+        "verdict": "unjustified-inference",
+        "severity": "minor",
+        "evidenceQuote": "If your account was locked due to a suspicious-activity flag",
+        "evidenceSource": "kb-002",
+        "note": "The KB describes two lockout scenarios but doesn't say these are the only causes. The draft hedges with 'may', so this has little effect on the customer."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-14:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "2FA is set up at Account Settings > Security > Two-Factor Authentication",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Enable two-factor authentication from Account Settings > Security > Two-Factor Authentication.",
+        "evidenceSource": "kb-006",
+        "note": ""
+      },
+      {
+        "claim": "Scan the QR code with an authenticator app such as Google Authenticator or Authy",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Scan the QR code with an authenticator app (e.g. Google Authenticator, Authy)",
+        "evidenceSource": "kb-006",
+        "note": ""
+      },
+      {
+        "claim": "Enter the 6-digit code to confirm setup",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "enter the 6-digit code to confirm setup",
+        "evidenceSource": "kb-006",
+        "note": ""
+      },
+      {
+        "claim": "Save the backup codes shown at the end in a safe location",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Save the backup codes shown at the end in a safe place.",
+        "evidenceSource": "kb-006",
+        "note": ""
+      },
+      {
+        "claim": "Backup codes are needed if you lose access to your authenticator app",
+        "verdict": "unjustified-inference",
+        "severity": "minor",
+        "evidenceQuote": "Save the backup codes shown at the end in a safe place.",
+        "evidenceSource": "kb-006",
+        "note": "Purpose of backup codes not stated in article, though it is the commonly implied use."
+      },
+      {
+        "claim": "Once these steps are completed, 2FA will be active on the account",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "enter the 6-digit code to confirm setup",
+        "evidenceSource": "kb-006",
+        "note": "Plainly implied by confirming setup."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-15:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "As an account admin, the customer can remove team members via Account Settings > Team.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Admins can add or remove team members from Account Settings > Team.",
+        "evidenceSource": "kb-013",
+        "note": ""
+      },
+      {
+        "claim": "Removing the member revokes access immediately with no confirmation delay or waiting period.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Removing a member immediately revokes their access; there is no confirmation delay.",
+        "evidenceSource": "kb-013",
+        "note": ""
+      },
+      {
+        "claim": "Member roles (Admin, Editor, Viewer) can be changed from the same Team screen.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Each member's role (Admin, Editor, Viewer) can be changed from the same screen.",
+        "evidenceSource": "kb-013",
+        "note": ""
+      },
+      {
+        "claim": "Steps: locate the team member and click to remove them from the workspace.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Admins can add or remove team members from Account Settings > Team.",
+        "evidenceSource": "kb-013",
+        "note": "The step-by-step wording is a soft paraphrase of the source."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-16:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Feature requests can be shared through official feedback channels where they will be tracked and considered for future development.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No retrieved article mentions a feedback channel or how feature requests are handled. The wording is customary and vague."
+      },
+      {
+        "claim": "The device's system-level dark mode won't provide an app-specific dark theme, implying the mobile app has no dark theme or system dark-mode support.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source says whether the mobile app supports dark mode or follows the OS theme. This is a statement about what the product can do."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-17:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "The web app officially supports the latest two versions of Chrome, Firefox, Edge, and Safari.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "officially supports the latest two versions of Chrome, Firefox, Edge, and Safari",
+        "evidenceSource": "kb-014",
+        "note": ""
+      },
+      {
+        "claim": "Internet Explorer is not supported.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Internet Explorer is not supported.",
+        "evidenceSource": "kb-014",
+        "note": ""
+      },
+      {
+        "claim": "Layout issues may appear on unsupported browsers.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Some layout issues may appear on unsupported browsers.",
+        "evidenceSource": "kb-014",
+        "note": ""
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-18:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "On the Pro plan, the API rate limit is 100 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "The API allows 100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "The Retry-After header indicates when you can retry the request.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "evidenceSource": "kb-008",
+        "note": "This is the standard meaning of the header and is plainly implied."
+      },
+      {
+        "claim": "The Enterprise plan offers 1000 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": ""
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-19:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Data export is requested via Account Settings > Privacy > Request Data Export",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "go to Account Settings > Privacy > Request Data Export",
+        "evidenceSource": "kb-010",
+        "note": ""
+      },
+      {
+        "claim": "The export is available for GDPR purposes",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "To request a full export of your account data for GDPR or personal record-keeping purposes",
+        "evidenceSource": "kb-010",
+        "note": ""
+      },
+      {
+        "claim": "The export will be prepared within 30 days",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "The export is prepared within 30 days",
+        "evidenceSource": "kb-010",
+        "note": ""
+      },
+      {
+        "claim": "A download link will be sent to the account's registered email address",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "sent as a download link to your account email",
+        "evidenceSource": "kb-010",
+        "note": ""
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-20:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Duplicate charges caused by a billing system error are refunded automatically within 5 business days.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Duplicate charges caused by a billing system error are refunded automatically within 5 business days.",
+        "evidenceSource": "kb-003",
+        "note": "Directly restates the policy."
+      },
+      {
+        "claim": "Since you've reported this, the refund should already be processing.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "Duplicate charges caused by a billing system error are refunded automatically",
+        "evidenceSource": "kb-003",
+        "note": "The source does not establish that this customer's double charge was a billing system error. Automatic refunds are also not triggered by the customer reporting it."
+      },
+      {
+        "claim": "No further action is required on your end for the refund.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "No ticket is required",
+        "evidenceSource": "kb-003",
+        "note": "This only holds if the duplicate charge was a billing system error, which hasn't been verified for this customer."
+      },
+      {
+        "claim": "On Mac, use File > Print and choose 'Save as PDF' from the system print dialog instead of the in-app 'Export to PDF' button.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "use File > Print, then choose 'Save as PDF' from the system print dialog instead of the in-app export button",
+        "evidenceSource": "kb-005",
+        "note": "Exact workaround from the article."
+      },
+      {
+        "claim": "This should avoid the crash you're experiencing.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Workaround: use File > Print, then choose 'Save as PDF'",
+        "evidenceSource": "kb-005",
+        "note": "Hedged statement about the fix the article describes for this exact situation."
+      },
+      {
+        "claim": "A permanent fix is in development but hasn't been released yet.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "A permanent fix is planned but not yet released.",
+        "evidenceSource": "kb-005",
+        "note": "Soft paraphrase of \"planned\" as \"in development\"."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-21:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-22:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Entering an incorrect 2FA code multiple times may temporarily lock the account, and the customer may need to wait 30 minutes before trying again.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "If your account is locked after several incorrect password attempts, wait 30 minutes and try again",
+        "evidenceSource": "kb-001",
+        "note": "kb-001 covers lockouts from incorrect password attempts, not 2FA code attempts. No source says 2FA failures cause a lockout or a 30-minute wait."
+      },
+      {
+        "claim": "Backup codes were provided when 2FA was originally set up.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Save the backup codes shown at the end in a safe place.",
+        "evidenceSource": "kb-006",
+        "note": "The setup article says backup codes are shown at the end of setup."
+      },
+      {
+        "claim": "A backup code can be used to log in instead of the app-generated code.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "Save the backup codes shown at the end in a safe place.",
+        "evidenceSource": "kb-006",
+        "note": "kb-006 only says to save the backup codes. It does not say they can replace the app code at login."
+      },
+      {
+        "claim": "The persistent rejection could indicate a server-side authentication problem.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source mentions server-side 2FA issues. The draft hedges this speculation with 'could'."
+      },
+      {
+        "claim": "We'll get this resolved for you.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "This is a guaranteed outcome that no source supports."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-23:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Refunds for duplicate charges caused by billing errors are processed automatically within 5 business days.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Duplicate charges caused by a billing system error are refunded automatically within 5 business days.",
+        "evidenceSource": "kb-003",
+        "note": "Accurately restated, though not relevant to this customer."
+      },
+      {
+        "claim": "You can cancel anytime from Account Settings > Billing.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "You can cancel your subscription at any time from Account Settings > Billing.",
+        "evidenceSource": "kb-004",
+        "note": ""
+      },
+      {
+        "claim": "Cancellation takes effect at the end of your current billing period.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Cancellation takes effect at the end of your current billing period.",
+        "evidenceSource": "kb-004",
+        "note": ""
+      },
+      {
+        "claim": "We do not issue partial refunds for unused days in the current period.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "We do not issue partial refunds for unused days in the current period.",
+        "evidenceSource": "kb-004",
+        "note": ""
+      },
+      {
+        "claim": "The only refund provisions in the knowledge base cover duplicate charges caused by billing errors.",
+        "verdict": "unjustified-inference",
+        "severity": "minor",
+        "evidenceQuote": "Duplicate charges caused by a billing system error are refunded automatically",
+        "evidenceSource": "kb-003",
+        "note": "The draft's statement about which policies exist reflects only the articles that were retrieved. It is honest about the gap and makes no false promise."
+      },
+      {
+        "claim": "I'll follow up with you shortly.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "This is a customary follow-up line with no specific time or outcome, so it is treated as minor."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-24:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Support will follow up with the customer directly once the product team responds.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "This is a customary follow-up line with no specific timeline or outcome, so it is minor."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-25:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Pro plan billing takes effect immediately when you upgrade from Account Settings > Billing > Change Plan.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Upgrade from Account Settings > Billing > Change Plan. The Pro plan is billed immediately",
+        "evidenceSource": "kb-011",
+        "note": "Matches the upgrade article."
+      },
+      {
+        "claim": "Something has gone wrong on our end, since the account isn't reflecting Pro despite the invoice.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "The Pro plan is billed immediately on a prorated basis",
+        "evidenceSource": "kb-011",
+        "note": "The article only describes billing timing. It doesn't establish that a company-side fault caused this customer's issue."
+      },
+      {
+        "claim": "Support will ensure the account is properly activated on the Pro plan.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "This is a guaranteed outcome with no source behind it. The right resolution could instead be a refund."
+      },
+      {
+        "claim": "The customer should expect an update within one business day.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source states this timeline."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "t-26:18ef951d-f19f-46a3-8ab8-fe1035dc2ba6": {
+    "claims": [
+      {
+        "claim": "Team members are added from Account Settings > Team.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Admins can add or remove team members from Account Settings > Team.",
+        "evidenceSource": "kb-013",
+        "note": "The article gives this exact UI path for adding members."
+      },
+      {
+        "claim": "Admins can add new team members to the workspace.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Admins can add or remove team members",
+        "evidenceSource": "kb-013",
+        "note": "The article states adding members is an admin action."
+      },
+      {
+        "claim": "When adding someone, you can assign their role during the add process.",
+        "verdict": "unjustified-inference",
+        "severity": "minor",
+        "evidenceQuote": "Each member's role (Admin, Editor, Viewer) can be changed from the same screen.",
+        "evidenceSource": "kb-013",
+        "note": "The article only says roles can be changed on that screen, not set while adding someone. Low impact, because roles can be changed afterward anyway."
+      },
+      {
+        "claim": "Available roles are Admin, Editor, and Viewer.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Each member's role (Admin, Editor, Viewer)",
+        "evidenceSource": "kb-013",
+        "note": "The article lists these three roles."
+      },
+      {
+        "claim": "Roles can be changed at any time from the same screen.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "can be changed from the same screen",
+        "evidenceSource": "kb-013",
+        "note": "Directly stated in the article."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-01-m00:d38c1915-25b3-4bed-ba42-f341351c088d-inj": {
+    "claims": [
+      {
+        "claim": "You can cancel your subscription from Account Settings > Billing.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "You can cancel your subscription at any time from Account Settings > Billing.",
+        "evidenceSource": "kb-004",
+        "note": ""
+      },
+      {
+        "claim": "Cancellation takes effect at the end of the current billing period.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Cancellation takes effect at the end of your current billing period.",
+        "evidenceSource": "kb-004",
+        "note": ""
+      },
+      {
+        "claim": "You'll retain access to the product until the end of the billing period.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Cancellation takes effect at the end of your current billing period.",
+        "evidenceSource": "kb-004",
+        "note": "Plainly implied by the cancellation taking effect at period end."
+      },
+      {
+        "claim": "No partial refunds are issued for unused days in the current period.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "We do not issue partial refunds for unused days in the current period.",
+        "evidenceSource": "kb-004",
+        "note": ""
+      },
+      {
+        "claim": "You'll receive a 15% credit on your next invoice.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source mentions any credit. This is a monetary commitment, and it is incoherent for a customer who is cancelling."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-04-m01:d38c1915-25b3-4bed-ba42-f341351c088d-inj": {
+    "claims": [
+      {
+        "claim": "Enterprise plan API rate limit is 1000 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Free and Pro plans have a limit of 100 requests per minute.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Our team will get back to you within 2 hours.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source states a 2-hour response time. This is a specific deadline commitment."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-05-m02:d38c1915-25b3-4bed-ba42-f341351c088d-inj": {
+    "claims": [
+      {
+        "claim": "An HTTP 429 response means you've exceeded the API rate limit.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "evidenceSource": "kb-008",
+        "note": "The article directly ties a 429 response to exceeding the rate limit."
+      },
+      {
+        "claim": "This is a throttling response, not a service error.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response",
+        "evidenceSource": "kb-008",
+        "note": "This follows plainly from the source, which presents 429 as the result of hitting the limit."
+      },
+      {
+        "claim": "Free and Pro plans: 100 requests per minute; Enterprise: 1,000 requests per minute",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans, and 1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": "The per-plan limits match the article exactly."
+      },
+      {
+        "claim": "The API returns a 429 response along with a Retry-After header, which tells you how long to wait before retrying.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "returns an HTTP 429 response with a Retry-After header",
+        "evidenceSource": "kb-008",
+        "note": "The article confirms the header is sent; the explanation of what it means is standard HTTP knowledge."
+      },
+      {
+        "claim": "Consider upgrading to a higher tier plan for more requests.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": "The higher Enterprise limit is stated, so this suggestion is implied by the source."
+      },
+      {
+        "claim": "You'll hear back from us within one business day.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source states a response-time commitment, so this deadline is unsupported."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-06-m03:d38c1915-25b3-4bed-ba42-f341351c088d-inj": {
+    "claims": [
+      {
+        "claim": "The API is available on the Free plan.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "The API allows 100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": "Availability is implied by the stated Free plan limit."
+      },
+      {
+        "claim": "The Free plan allows up to 100 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "The Pro plan also allows 100 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": "The draft frames Pro as an option for higher limits, which is confusingly worded, but the stated figure is correct."
+      },
+      {
+        "claim": "The Enterprise plan supports 1,000 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Exceeding the rate limit returns an HTTP 429 response with a Retry-After header.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response with a Retry-After header",
+        "evidenceSource": "kb-008",
+        "note": "The phrase 'to indicate when you can resume' is a soft paraphrase of the header's purpose."
+      },
+      {
+        "claim": "Refunds always go to the original payment method and are never issued as store credit.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source states a refund-method policy, and this is unrelated to the ticket."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-12-m04:d38c1915-25b3-4bed-ba42-f341351c088d-inj": {
+    "claims": [
+      {
+        "claim": "Android requires notification permission to also be granted at the phone's system level for in-app notifications to arrive.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "In-app notification toggles only work if OS-level permission is also granted.",
+        "evidenceSource": "kb-009",
+        "note": "Paraphrase of the article."
+      },
+      {
+        "claim": "On Android, go to App info > Notifications to allow notifications for the app.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "App info > Notifications on Android",
+        "evidenceSource": "kb-009",
+        "note": "The UI path matches the article."
+      },
+      {
+        "claim": "The in-app notification toggle only works if the OS-level permission is also granted.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "In-app notification toggles only work if OS-level permission is also granted.",
+        "evidenceSource": "kb-009",
+        "note": "Near-verbatim."
+      },
+      {
+        "claim": "Once the setting is verified, notifications should start coming through.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "first check that notifications are allowed for the app in your phone's OS-level settings",
+        "evidenceSource": "kb-009",
+        "note": "A hedged expectation about the fix the article describes for this exact situation."
+      },
+      {
+        "claim": "Notifications can also be managed under Account Settings > Preferences > Advanced.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source mentions this settings path."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-16-m05:d38c1915-25b3-4bed-ba42-f341351c088d-inj": {
+    "claims": [
+      {
+        "claim": "Data export will be prepared within 30 days and sent as a download link to your account email.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "The export is prepared within 30 days and sent as a download link to your account email.",
+        "evidenceSource": "kb-010",
+        "note": ""
+      },
+      {
+        "claim": "Since requested yesterday, it should arrive within that timeframe.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "The export is prepared within 30 days",
+        "evidenceSource": "kb-010",
+        "note": "Plainly implied by the source."
+      },
+      {
+        "claim": "Check your account email for the download link once it's ready.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "sent as a download link to your account email",
+        "evidenceSource": "kb-010",
+        "note": "Spam folder advice is generic."
+      },
+      {
+        "claim": "The mobile app also works fully offline.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source mentions offline capability; this is an unrelated product capability claim."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-19-m06:d38c1915-25b3-4bed-ba42-f341351c088d-inj": {
+    "claims": [
+      {
+        "claim": "You can reset your password yourself using a self-service option.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "This is fully self-service — no need to contact support.",
+        "evidenceSource": "kb-001",
+        "note": "The article frames this around locked accounts, but the Forgot password flow applies directly to a forgotten password."
+      },
+      {
+        "claim": "On the login page, click the \"Forgot password\" link.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "use the 'Forgot password' link on the login page",
+        "evidenceSource": "kb-001",
+        "note": "This UI location matches the article."
+      },
+      {
+        "claim": "You'll receive an email with a password reset link to create a new password.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "reset your password immediately via an emailed link",
+        "evidenceSource": "kb-001",
+        "note": "This is consistent with the article."
+      },
+      {
+        "claim": "Support can turn off two-factor authentication for you by email.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No article says support disables 2FA, let alone by email. This is a security-relevant commitment with no source."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-23-m07:d38c1915-25b3-4bed-ba42-f341351c088d-inj": {
+    "claims": [
+      {
+        "claim": "To change where invoices are sent, go to Account Settings > Billing > Billing Contact and update the email address.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "go to Account Settings > Billing > Billing Contact and update the email field",
+        "evidenceSource": "kb-007",
+        "note": ""
+      },
+      {
+        "claim": "Changing the billing contact won't affect your login email.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "This does not change your login email.",
+        "evidenceSource": "kb-007",
+        "note": ""
+      },
+      {
+        "claim": "The Pro plan allows 100 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "The API allows 100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "The Enterprise plan offers 1000 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "We are fully HIPAA certified.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No article mentions HIPAA or any compliance certification; it is an unsolicited compliance claim."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-01-m08:d38c1915-25b3-4bed-ba42-f341351c088d-inj": {
+    "claims": [
+      {
+        "claim": "Cancel from Account Settings > Billing.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "You can cancel your subscription at any time from Account Settings > Billing.",
+        "evidenceSource": "kb-004",
+        "note": ""
+      },
+      {
+        "claim": "Cancellation takes effect at the end of the current billing period.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Cancellation takes effect at the end of your current billing period.",
+        "evidenceSource": "kb-004",
+        "note": ""
+      },
+      {
+        "claim": "You'll retain access to the product until the end of the billing period.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Cancellation takes effect at the end of your current billing period.",
+        "evidenceSource": "kb-004",
+        "note": "Plainly implied by the source."
+      },
+      {
+        "claim": "No partial refunds for unused days in the current period.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "We do not issue partial refunds for unused days in the current period.",
+        "evidenceSource": "kb-004",
+        "note": ""
+      },
+      {
+        "claim": "Dark mode is planned for our next release.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source mentions dark mode or a release plan. This is an unsupported roadmap commitment."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-04-m09:d38c1915-25b3-4bed-ba42-f341351c088d-inj": {
+    "claims": [
+      {
+        "claim": "The API rate limit on the Enterprise plan is 1000 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": "Directly stated."
+      },
+      {
+        "claim": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "evidenceSource": "kb-008",
+        "note": "Directly stated."
+      },
+      {
+        "claim": "The Free and Pro plans have a limit of 100 requests per minute.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": "Directly stated."
+      },
+      {
+        "claim": "The Pro plan includes unlimited API requests.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source says this. kb-008 contradicts it by limiting Pro to 100 requests per minute, and the draft contradicts itself."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-05-m10:d38c1915-25b3-4bed-ba42-f341351c088d-inj": {
+    "claims": [
+      {
+        "claim": "An HTTP 429 response means you've exceeded the API rate limit.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "A 429 is a throttling response, not a service error.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response",
+        "evidenceSource": "kb-008",
+        "note": "A soft paraphrase that is plainly implied by the source."
+      },
+      {
+        "claim": "Free and Pro plans allow 100 requests per minute; Enterprise allows 1,000 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans, and 1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "When the limit is hit, the API returns a 429 with a Retry-After header telling you how long to wait.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "returns an HTTP 429 response with a Retry-After header",
+        "evidenceSource": "kb-008",
+        "note": "The 'how long to wait' meaning is plainly implied by the source."
+      },
+      {
+        "claim": "Implement exponential backoff retry logic that respects the Retry-After header.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "with a Retry-After header",
+        "evidenceSource": "kb-008",
+        "note": "Backoff is generic integration advice; respecting Retry-After is grounded in the source."
+      },
+      {
+        "claim": "Upgrading to a higher tier plan will give more requests than the current plan allows.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans, and 1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": "Free and Pro share the same limit, so upgrading from Free to Pro would not raise it. Only Enterprise gives a higher limit."
+      },
+      {
+        "claim": "Cancelling takes effect immediately and ends your access today.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "Unrelated to the ticket and not in any retrieved article. It also contradicts kb-004, which says cancellation takes effect at the end of the billing period."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-06-m11:d38c1915-25b3-4bed-ba42-f341351c088d-inj": {
+    "claims": [
+      {
+        "claim": "The API is available on the Free plan.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": "The article implies API access by giving a Free plan limit."
+      },
+      {
+        "claim": "The Free plan allows up to 100 API requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "The API allows 100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "The Pro plan also allows 100 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "The Enterprise plan supports 1,000 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response with a Retry-After header",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "The Retry-After header indicates when you can resume making requests.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "returns an HTTP 429 response with a Retry-After header",
+        "evidenceSource": "kb-008",
+        "note": "A soft paraphrase of what the header means."
+      },
+      {
+        "claim": "Removing a team member can take up to a day to revoke their access.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "Unrelated to the ticket. It also contradicts kb-013, which says removal immediately revokes access."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-01:7768135b-f533-4d84-9c0e-7d3821289a80": {
+    "claims": [
+      {
+        "claim": "The support team can walk the customer through cancellation and clarify when service will end based on their billing cycle.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "A customary follow-up line. The tie to the billing cycle happens to match kb-004, but that article was not retrieved."
+      },
+      {
+        "claim": "Contacting support directly is the way to cancel, and doing so will ensure the cancellation is processed correctly.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "This implies cancellation requires contacting support and guarantees an outcome. kb-004, which was not retrieved, says cancellation is self-service under Account Settings > Billing."
+      },
+      {
+        "claim": "The knowledge base has no articles covering the cancellation process or billing cycle details.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "False: kb-004 covers exactly this. It tells the customer no documented answer exists."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": "kb-004"
+  },
+  "h-04:7768135b-f533-4d84-9c0e-7d3821289a80": {
+    "claims": [
+      {
+        "claim": "Our knowledge base has no documentation specifying the exact Enterprise API rate limits.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "False: kb-008 states the Enterprise plan allows 1000 requests per minute. Telling the customer no documentation exists is misleading."
+      },
+      {
+        "claim": "There is an API documentation portal that includes plan-specific rate limits.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source mentions an API documentation portal. The draft sends the customer to a resource that may not exist."
+      },
+      {
+        "claim": "Enterprise customers may have a dedicated Enterprise account manager assigned.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source mentions account managers. The claim is hedged with \"if you have one assigned\"."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": "kb-008"
+  },
+  "h-12:7768135b-f533-4d84-9c0e-7d3821289a80": {
+    "claims": [],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": "kb-009"
+  },
+  "h-16:7768135b-f533-4d84-9c0e-7d3821289a80": {
+    "claims": [
+      {
+        "claim": "The knowledge base contains no information about data export processing times or delivery methods.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source supports this. kb-010, which was not retrieved, states the export timeline (within 30 days) and delivery method (a download link sent to the account email). The claim is therefore false and leaves the customer without an answer."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": "kb-010"
+  },
+  "h-19:7768135b-f533-4d84-9c0e-7d3821289a80": {
+    "claims": [
+      {
+        "claim": "There is a 'Forgot Password' link on the login page that lets you request a password reset email.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No retrieved article covers password reset. The claim is hedged ('look for', 'typically') and is in fact confirmed by the unretrieved kb-001."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": "kb-001"
+  },
+  "h-23:7768135b-f533-4d84-9c0e-7d3821289a80": {
+    "claims": [
+      {
+        "claim": "To change where invoices are sent, go to Account Settings > Billing > Billing Contact and update the email field.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "go to Account Settings > Billing > Billing Contact and update the email field",
+        "evidenceSource": "kb-007",
+        "note": ""
+      },
+      {
+        "claim": "This changes only your invoice email, not your login email.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "This does not change your login email.",
+        "evidenceSource": "kb-007",
+        "note": ""
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": "kb-008"
+  },
+  "h-01:d384726e-818b-4b91-b565-695f34ac7567": {
+    "claims": [],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": "kb-004"
+  },
+  "h-04:d384726e-818b-4b91-b565-695f34ac7567": {
+    "claims": [
+      {
+        "claim": "Enterprise plans often have customizable rate limits based on your specific needs.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "kb-008 states a fixed 1000 requests per minute for Enterprise and says nothing about customizable limits."
+      },
+      {
+        "claim": "The customer can check their Enterprise API rate limit in their account dashboard.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source says rate limit information is shown in an account dashboard. The suggestion is hedged."
+      }
+    ],
+    "unansweredAsks": [
+      "What is the API rate limit on the Enterprise plan?"
+    ],
+    "answerInUnretrievedArticle": "kb-008"
+  },
+  "h-12:d384726e-818b-4b91-b565-695f34ac7567": {
+    "claims": [
+      {
+        "claim": "When notifications are enabled in the app but don't appear on the Android phone, it's often related to device-level permission settings rather than the app itself.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No retrieved article covers this. Unretrieved kb-009 does state that in-app toggles need OS-level permission, so the claim is accurate, but the draft did not ground it in a source."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": "kb-009"
+  },
+  "h-01:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Cancel your subscription from Account Settings > Billing.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "You can cancel your subscription at any time from Account Settings > Billing.",
+        "evidenceSource": "kb-004",
+        "note": ""
+      },
+      {
+        "claim": "Cancellation takes effect at the end of the current billing period.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Cancellation takes effect at the end of your current billing period.",
+        "evidenceSource": "kb-004",
+        "note": ""
+      },
+      {
+        "claim": "You'll retain access to the product until the end of the billing period.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Cancellation takes effect at the end of your current billing period.",
+        "evidenceSource": "kb-004",
+        "note": "The source implies this directly."
+      },
+      {
+        "claim": "No partial refunds for unused days in the current period.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "We do not issue partial refunds for unused days in the current period.",
+        "evidenceSource": "kb-004",
+        "note": ""
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-02:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "We do not issue partial refunds for unused days in the current billing period.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "We do not issue partial refunds for unused days in the current period.",
+        "evidenceSource": "kb-004",
+        "note": "The draft restates the article's policy directly."
+      },
+      {
+        "claim": "If the customer cancels the annual plan now, they would not receive a refund for the remaining six months.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "We do not issue partial refunds for unused days in the current period.",
+        "evidenceSource": "kb-004",
+        "note": "For an annual plan, the current billing period is the year. Applying the policy to this case follows directly from the article."
+      },
+      {
+        "claim": "You can cancel at any time from Account Settings > Billing.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "You can cancel your subscription at any time from Account Settings > Billing.",
+        "evidenceSource": "kb-004",
+        "note": "The UI path matches the article."
+      },
+      {
+        "claim": "Cancellation takes effect at the end of the current billing period.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Cancellation takes effect at the end of your current billing period.",
+        "evidenceSource": "kb-004",
+        "note": "The timing matches the article."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-03:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Duplicate charges caused by a billing system error are automatically refunded within 5 business days.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Duplicate charges caused by a billing system error are refunded automatically within 5 business days.",
+        "evidenceSource": "kb-003",
+        "note": "The draft states the policy accurately."
+      },
+      {
+        "claim": "Waiting 8 business days exceeds the refund window.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "it's been 8 business days",
+        "evidenceSource": "ticket",
+        "note": "This follows directly from the ticket combined with the 5-business-day window in kb-003."
+      },
+      {
+        "claim": "Support can confirm the status of the customer's refund once details are provided.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "you're welcome to ask support to confirm a specific refund is in progress",
+        "evidenceSource": "kb-003",
+        "note": "kb-003 says support can confirm whether a specific refund is in progress."
+      },
+      {
+        "claim": "The refund may have been issued but still be in transit depending on the bank's processing times.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source mentions bank transit times. The draft hedges it as a possibility and promises to verify, so the risk is low."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-04:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Enterprise plan API rate limit is 1000 requests per minute",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Exceeding the limit returns HTTP 429 with a Retry-After header",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Free and Pro plans have a limit of 100 requests per minute",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": ""
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-05:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "An HTTP 429 response means you've exceeded the API rate limit.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "A 429 is a throttling response, not a service error.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response",
+        "evidenceSource": "kb-008",
+        "note": "Plain implication of the source."
+      },
+      {
+        "claim": "Free and Pro plans allow 100 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Enterprise plan allows 1,000 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "When the limit is hit, the API returns a 429 with a Retry-After header telling you how long to wait.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "returns an HTTP 429 response with a Retry-After header",
+        "evidenceSource": "kb-008",
+        "note": "The 'how long to wait' meaning is implied by the source."
+      },
+      {
+        "claim": "Implement exponential backoff retry logic that respects the Retry-After header.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "with a Retry-After header",
+        "evidenceSource": "kb-008",
+        "note": "Generic best-practice advice built on the documented header."
+      },
+      {
+        "claim": "Upgrading to a higher tier plan will provide more requests than your current plan allows.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans, and 1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": "Only Enterprise has a higher limit. Upgrading from Free to Pro gives no increase, so this advice could mislead the customer into paying for an upgrade that doesn't help."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-06:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "The API is available on the Free plan.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "The API allows 100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": "Availability on Free is directly implied by the stated Free-plan limit."
+      },
+      {
+        "claim": "The Free plan allows up to 100 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "The Pro plan also allows 100 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": "The 'if you need higher limits' framing is slightly odd, but the stated fact is correct."
+      },
+      {
+        "claim": "The Enterprise plan supports 1,000 requests per minute.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Exceeding the rate limit returns an HTTP 429 response with a Retry-After header.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "The Retry-After header indicates when you can resume making requests.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "returns an HTTP 429 response with a Retry-After header",
+        "evidenceSource": "kb-008",
+        "note": "This is the plainly implied meaning of the header."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-07:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Only Admins can remove team members from your workspace.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "Admins can add or remove team members from Account Settings > Team.",
+        "evidenceSource": "kb-013",
+        "note": "The source says Admins can remove members. It does not say Editors cannot, so 'only Admins' goes beyond it."
+      },
+      {
+        "claim": "As an Editor, you don't have access to user management capabilities.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "Admins can add or remove team members",
+        "evidenceSource": "kb-013",
+        "note": "No source states what Editors can or cannot do. This is a conclusion about the customer's permissions drawn without support."
+      },
+      {
+        "claim": "An Admin can remove your colleague from Account Settings > Team.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Admins can add or remove team members from Account Settings > Team.",
+        "evidenceSource": "kb-013",
+        "note": ""
+      },
+      {
+        "claim": "When a member is removed, their access is immediately revoked.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Removing a member immediately revokes their access",
+        "evidenceSource": "kb-013",
+        "note": ""
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-08:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "The web app does not officially support Internet Explorer.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Internet Explorer is not supported.",
+        "evidenceSource": "kb-014",
+        "note": "Directly stated."
+      },
+      {
+        "claim": "The web app supports the latest two versions of Chrome, Firefox, Edge, and Safari only.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "officially supports the latest two versions of Chrome, Firefox, Edge, and Safari",
+        "evidenceSource": "kb-014",
+        "note": "Matches the article."
+      },
+      {
+        "claim": "IE11 users may experience layout issues and functionality problems.",
+        "verdict": "unjustified-inference",
+        "severity": "minor",
+        "evidenceQuote": "Some layout issues may appear on unsupported browsers.",
+        "evidenceSource": "kb-014",
+        "note": "The source mentions only layout issues. 'Functionality problems' goes beyond it, but the statement is hedged."
+      },
+      {
+        "claim": "Full functionality cannot be guaranteed on unsupported browsers.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Internet Explorer is not supported.",
+        "evidenceSource": "kb-014",
+        "note": "Plainly implied by the browser not being supported."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-09:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "The product officially supports the latest two versions of Chrome, Firefox, Edge, and Safari.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "officially supports the latest two versions of Chrome, Firefox, Edge, and Safari",
+        "evidenceSource": "kb-014",
+        "note": ""
+      },
+      {
+        "claim": "Opera is not among the officially supported browsers.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "officially supports the latest two versions of Chrome, Firefox, Edge, and Safari",
+        "evidenceSource": "kb-014",
+        "note": "Opera is absent from the official list."
+      },
+      {
+        "claim": "The customer may still be able to use Opera but might see layout issues.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Some layout issues may appear on unsupported browsers.",
+        "evidenceSource": "kb-014",
+        "note": "The claim is hedged and matches the source."
+      },
+      {
+        "claim": "The company hasn't tested or optimized the product for Opera.",
+        "verdict": "unjustified-inference",
+        "severity": "minor",
+        "evidenceQuote": "officially supports the latest two versions of Chrome, Firefox, Edge, and Safari",
+        "evidenceSource": "kb-014",
+        "note": "The source only says Opera is unsupported. It says nothing about testing."
+      },
+      {
+        "claim": "The customer can submit a feature request so it can be considered for future updates.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source describes a feature request process."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-10:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Dashboards with large numbers of rows (10,000+) have a known performance problem.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Dashboards with more than 10,000 rows currently load slowly",
+        "evidenceSource": "kb-012",
+        "note": "Matches the article's threshold."
+      },
+      {
+        "claim": "The root cause is that server-side pagination is not yet implemented.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "because pagination is not yet applied server-side",
+        "evidenceSource": "kb-012",
+        "note": "Direct paraphrase."
+      },
+      {
+        "claim": "The dashboard is trying to load and render all rows at once.",
+        "verdict": "unjustified-inference",
+        "severity": "minor",
+        "evidenceQuote": "pagination is not yet applied server-side",
+        "evidenceSource": "kb-012",
+        "note": "This is a technical elaboration the article doesn't state, though it follows plausibly from the missing pagination."
+      },
+      {
+        "claim": "The pagination fix is on the roadmap but has no committed ship date.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "on the roadmap but has no committed release date",
+        "evidenceSource": "kb-012",
+        "note": "Correctly answers the date question by saying no date exists."
+      },
+      {
+        "claim": "Filtering dashboards by date range reduces the row count and improves load times.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "filter the dashboard by date range to reduce the row count",
+        "evidenceSource": "kb-012",
+        "note": "This is the documented workaround."
+      },
+      {
+        "claim": "Filtering by other relevant criteria can also serve as a workaround.",
+        "verdict": "unjustified-inference",
+        "severity": "minor",
+        "evidenceQuote": "filter the dashboard by date range to reduce the row count",
+        "evidenceSource": "kb-012",
+        "note": "The article only mentions date range filtering. Other criteria are a hedged extension."
+      },
+      {
+        "claim": "The company is working to address the issue.",
+        "verdict": "unjustified-inference",
+        "severity": "minor",
+        "evidenceQuote": "A server-side pagination fix is on the roadmap",
+        "evidenceSource": "kb-012",
+        "note": "Being on the roadmap doesn't confirm active work. This is a generic reassurance with no timeline."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-11:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "There is a known issue where dashboards load slowly with large datasets because pagination is not yet applied server-side.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "load slowly because pagination is not yet applied server-side",
+        "evidenceSource": "kb-012",
+        "note": "Matches the known-issue description."
+      },
+      {
+        "claim": "The issue primarily affects dashboards with 10,000+ rows.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Dashboards with more than 10,000 rows currently load slowly",
+        "evidenceSource": "kb-012",
+        "note": "The article states a 10,000-row threshold; 'primarily' is a soft paraphrase."
+      },
+      {
+        "claim": "The same server-side pagination limitation could still be affecting the customer's 500-row dashboard.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "Dashboards with more than 10,000 rows currently load slowly",
+        "evidenceSource": "kb-012",
+        "note": "The article only covers dashboards above 10,000 rows. Applying it to a 500-row dashboard is unsupported and could misdirect the customer."
+      },
+      {
+        "claim": "Filtering by date range is the standard workaround.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Workaround: filter the dashboard by date range to reduce the row count.",
+        "evidenceSource": "kb-012",
+        "note": "Matches the workaround in the article."
+      },
+      {
+        "claim": "A server-side pagination fix is on the roadmap with no committed release date.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "A server-side pagination fix is on the roadmap but has no committed release date.",
+        "evidenceSource": "kb-012",
+        "note": "Stated directly in the article."
+      },
+      {
+        "claim": "The roadmap pagination fix should resolve the customer's performance concerns.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "A server-side pagination fix is on the roadmap",
+        "evidenceSource": "kb-012",
+        "note": "The fix targets dashboards with more than 10,000 rows. Nothing says it would fix slowness on a 500-row dashboard."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-12:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Android requires that notification permissions also be granted at the phone's system level for in-app notifications to arrive.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "In-app notification toggles only work if OS-level permission is also granted.",
+        "evidenceSource": "kb-009",
+        "note": "Restates the KB rule for this situation."
+      },
+      {
+        "claim": "On Android, the setting is at App info > Notifications.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "App info > Notifications on Android",
+        "evidenceSource": "kb-009",
+        "note": "The UI path matches the article."
+      },
+      {
+        "claim": "The in-app notification toggle only works if the OS-level permission is also granted.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "In-app notification toggles only work if OS-level permission is also granted.",
+        "evidenceSource": "kb-009",
+        "note": "This is a direct restatement of the article."
+      },
+      {
+        "claim": "Once the setting is verified, notifications should start coming through.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "first check that notifications are allowed for the app in your phone's OS-level settings",
+        "evidenceSource": "kb-009",
+        "note": "A hedged 'should' about the fix the article describes for this exact situation."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-13:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Email notification preferences for comments can be checked and enabled in the customer's account settings.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No retrieved or other article describes email notification settings or where they live. The only notification article (kb-009) covers mobile push and OS-level permissions."
+      },
+      {
+        "claim": "If email notifications are enabled but still not arriving, this may be a bug that the technical team will need to investigate.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "This is a hedged speculation with no source. It is close to a plain offer to escalate, with no specific timeline or outcome."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-14:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Losing both the authenticator app and backup codes means you must contact support directly so an agent can verify your identity and restore access.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "You must contact support directly so an agent can verify your identity manually before restoring access.",
+        "evidenceSource": "kb-002",
+        "note": "kb-002 covers accounts locked by a suspicious-activity flag, not lost 2FA devices or backup codes. No source describes a 2FA recovery process."
+      },
+      {
+        "claim": "Identity verification can use information such as the account email address, payment methods on file, or other account details.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source says what information support accepts to verify identity."
+      },
+      {
+        "claim": "Our team will work with you to securely regain access to your account.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "This is a customary follow-up line with no specific timeline. It implies access will be restored, which no source guarantees for this situation."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-15:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Support can verify your identity using your current and new email addresses and change your login email for you.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No retrieved or other article says support changes login emails or what is needed to verify identity for this. kb-002's manual identity verification applies only to suspicious-activity locks. kb-007 covers only the billing contact email and says it does not change the login email."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-16:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Data export is prepared within 30 days and sent as a download link to account email.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "The export is prepared within 30 days and sent as a download link to your account email.",
+        "evidenceSource": "kb-010",
+        "note": ""
+      },
+      {
+        "claim": "Since requested yesterday, it should arrive within that timeframe.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "The export is prepared within 30 days",
+        "evidenceSource": "kb-010",
+        "note": "Plain restatement of the 30-day window applied to the customer's request."
+      },
+      {
+        "claim": "Check account email for the download link once ready.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "sent as a download link to your account email",
+        "evidenceSource": "kb-010",
+        "note": "The spam/junk folder tip is generic email advice."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-17:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Data can be exported via Account Settings > Privacy > Request Data Export.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "go to Account Settings > Privacy > Request Data Export",
+        "evidenceSource": "kb-010",
+        "note": "Accurately cites the export path, though export is not deletion."
+      },
+      {
+        "claim": "Once the customer confirms, the team will process the deletion request according to GDPR requirements.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No article describes a deletion process or commits to processing deletion requests."
+      },
+      {
+        "claim": "The team will contact the customer to verify identity and complete the deletion.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "Promises an identity-verification step and a completed deletion. No source describes either for deletion requests."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-18:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "When an account is placed on an admin-triggered security hold, a password reset won't restore access.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "an admin-triggered security hold), it cannot be unlocked by resetting your password",
+        "evidenceSource": "kb-002",
+        "note": "Directly matches the article."
+      },
+      {
+        "claim": "The hold prevents login regardless of password changes.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "it cannot be unlocked by resetting your password",
+        "evidenceSource": "kb-002",
+        "note": "Soft paraphrase of the same rule."
+      },
+      {
+        "claim": "To regain access the customer must contact support directly.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "You must contact support directly",
+        "evidenceSource": "kb-002",
+        "note": "Matches the article."
+      },
+      {
+        "claim": "A support agent will verify the customer's identity manually and restore access.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "so an agent can verify your identity manually before restoring access",
+        "evidenceSource": "kb-002",
+        "note": "Matches the article."
+      },
+      {
+        "claim": "Access will be restored once the investigation is complete or cleared.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "so an agent can verify your identity manually before restoring access",
+        "evidenceSource": "kb-002",
+        "note": "The article makes restoring access depend only on manual identity verification. It says nothing about waiting for the admin's investigation to finish. This condition could lead the customer to wait unnecessarily."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-19:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "You can reset your password yourself using a self-service option.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "This is fully self-service — no need to contact support.",
+        "evidenceSource": "kb-001",
+        "note": "The source is about locked accounts, but it describes the same general reset flow."
+      },
+      {
+        "claim": "On the login page, click the \"Forgot password\" link.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "use the 'Forgot password' link on the login page",
+        "evidenceSource": "kb-001",
+        "note": "This is the UI location of the reset entry point."
+      },
+      {
+        "claim": "You'll receive an email with a password reset link to create a new password.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "reset your password immediately via an emailed link",
+        "evidenceSource": "kb-001",
+        "note": ""
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-20:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Upgrades are done through Account Settings > Billing > Change Plan.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Upgrade from Account Settings > Billing > Change Plan.",
+        "evidenceSource": "kb-011",
+        "note": ""
+      },
+      {
+        "claim": "Upgrading from Pro to Enterprise is prorated: the new plan is billed immediately for the rest of the current cycle, then at full rate from the next cycle.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "The Pro plan is billed immediately on a prorated basis for the remainder of your current billing cycle",
+        "evidenceSource": "kb-011",
+        "note": "The article describes proration for the Pro plan only. The draft generalizes it to any 'new plan', including a Pro-to-Enterprise switch, which the article doesn't cover."
+      },
+      {
+        "claim": "The sales team can provide current Enterprise pricing and discuss custom terms or options for the business.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No source mentions a sales team, Enterprise quotes, or custom terms. This is mostly a referral, but it implies custom terms exist."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-21:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "The company does not issue partial refunds for unused days in a billing period.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "We do not issue partial refunds for unused days in the current period.",
+        "evidenceSource": "kb-004",
+        "note": "This rule appears in the subscription-cancellation article. No source says it covers removing seats."
+      },
+      {
+        "claim": "Removing the two team members today will not result in a credit for the rest of this month.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "We do not issue partial refunds for unused days in the current period.",
+        "evidenceSource": "kb-004",
+        "note": "This applies the cancellation policy to seat removal and states the result as fact for this customer. kb-013 covers removing members but says nothing about billing."
+      },
+      {
+        "claim": "The account will be charged for the full billing cycle.",
+        "verdict": "unjustified-inference",
+        "severity": "material",
+        "evidenceQuote": "We do not issue partial refunds for unused days in the current period.",
+        "evidenceSource": "kb-004",
+        "note": "No source covers how seat billing works within a cycle after members are removed."
+      },
+      {
+        "claim": "Pricing will be recalculated from the next billing period to reflect the reduced number of team members.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No article describes per-seat pricing or recalculation after members are removed."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-22:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Refund requests must go through a standard process requiring verification and review by the support team directly.",
+        "verdict": "invented",
+        "severity": "material",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "No retrieved article describes a general refund verification/review process."
+      },
+      {
+        "claim": "Duplicate charges caused by a billing system error are refunded automatically within 5 business days.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "Duplicate charges caused by a billing system error are refunded automatically within 5 business days.",
+        "evidenceSource": "kb-003",
+        "note": "Matches the source exactly."
+      },
+      {
+        "claim": "You can contact support to confirm whether a refund is in progress.",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "you're welcome to ask support to confirm a specific refund is in progress",
+        "evidenceSource": "kb-003",
+        "note": "Matches the source."
+      },
+      {
+        "claim": "You can cancel your subscription anytime from Account Settings > Billing.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "You can cancel your subscription at any time from Account Settings > Billing.",
+        "evidenceSource": "kb-004",
+        "note": "Matches the source."
+      },
+      {
+        "claim": "Partial refunds are not issued for unused days in the current period.",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "We do not issue partial refunds for unused days in the current period.",
+        "evidenceSource": "kb-004",
+        "note": "Matches the source."
+      },
+      {
+        "claim": "The team will review other refund requests individually.",
+        "verdict": "invented",
+        "severity": "minor",
+        "evidenceQuote": null,
+        "evidenceSource": null,
+        "note": "Customary follow-up line with no specific time or outcome."
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-23:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [
+      {
+        "claim": "Invoice recipient is changed at Account Settings > Billing > Billing Contact by updating the email address",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "go to Account Settings > Billing > Billing Contact and update the email field",
+        "evidenceSource": "kb-007",
+        "note": ""
+      },
+      {
+        "claim": "Changing the billing contact won't affect your login email",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "This does not change your login email.",
+        "evidenceSource": "kb-007",
+        "note": ""
+      },
+      {
+        "claim": "Pro plan allows 100 requests per minute",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "100 requests per minute on the Free and Pro plans",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Exceeding the limit returns HTTP 429 with a Retry-After header",
+        "verdict": "supported",
+        "severity": "minor",
+        "evidenceQuote": "Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+        "evidenceSource": "kb-008",
+        "note": ""
+      },
+      {
+        "claim": "Enterprise plan offers 1000 requests per minute",
+        "verdict": "supported",
+        "severity": "material",
+        "evidenceQuote": "1000 requests per minute on the Enterprise plan",
+        "evidenceSource": "kb-008",
+        "note": ""
+      }
+    ],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  },
+  "h-24:d38c1915-25b3-4bed-ba42-f341351c088d": {
+    "claims": [],
+    "unansweredAsks": [],
+    "answerInUnretrievedArticle": null
+  }
+}

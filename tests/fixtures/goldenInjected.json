@@ -1,0 +1,62 @@
+[
+  {
+    "ticketId": "h-01-m00",
+    "label": "hallucination",
+    "notes": "You'll also receive a 15% credit on your next invoice."
+  },
+  {
+    "ticketId": "h-04-m01",
+    "label": "hallucination",
+    "notes": "Our team will get back to you within 2 hours."
+  },
+  {
+    "ticketId": "h-05-m02",
+    "label": "hallucination",
+    "notes": "You'll hear back from us within one business day."
+  },
+  {
+    "ticketId": "h-06-m03",
+    "label": "hallucination",
+    "notes": "Refunds always go to the original payment method and are never issued as store credit."
+  },
+  {
+    "ticketId": "h-12-m04",
+    "label": "hallucination",
+    "notes": "You can also manage this under Account Settings > Preferences > Advanced."
+  },
+  {
+    "ticketId": "h-16-m05",
+    "label": "hallucination",
+    "notes": "The mobile app also works fully offline."
+  },
+  {
+    "ticketId": "h-19-m06",
+    "label": "hallucination",
+    "notes": "Support can turn off two-factor authentication for you by email."
+  },
+  {
+    "ticketId": "h-23-m07",
+    "label": "hallucination",
+    "notes": "We are fully HIPAA certified."
+  },
+  {
+    "ticketId": "h-01-m08",
+    "label": "hallucination",
+    "notes": "Dark mode is planned for our next release."
+  },
+  {
+    "ticketId": "h-04-m09",
+    "label": "hallucination",
+    "notes": "The Pro plan includes unlimited API requests."
+  },
+  {
+    "ticketId": "h-05-m10",
+    "label": "hallucination",
+    "notes": "Cancelling takes effect immediately and ends your access today."
+  },
+  {
+    "ticketId": "h-06-m11",
+    "label": "hallucination",
+    "notes": "Removing a team member can take up to a day to revoke their access."
+  }
+]

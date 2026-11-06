@@ -1,0 +1,111 @@
+[
+  {
+    "ticketId": "t-01",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-02",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-03",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-04",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-05",
+    "label": "hallucination",
+    "notes": "Points to Account Settings > Billing for the billing currency, which no article says."
+  },
+  {
+    "ticketId": "t-06",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-07",
+    "label": "bad-reasoning",
+    "notes": "Says the docs cover macOS, then still carries the workaround and planned fix over to Windows."
+  },
+  {
+    "ticketId": "t-08",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-09",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-10",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-11",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-12",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-13",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-14",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-15",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-16",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-17",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-18",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-19",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-20",
+    "label": "bad-reasoning",
+    "notes": "Both asks answered, but concludes the refund is already processing without knowing it was a system error."
+  },
+  {
+    "ticketId": "t-21",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-22",
+    "label": "hallucination",
+    "notes": "Claims wrong 2FA codes lock the account for 30 minutes and guesses at a server-side problem. No article covers this."
+  },
+  {
+    "ticketId": "t-23",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-24",
+    "label": "success"
+  },
+  {
+    "ticketId": "t-25",
+    "label": "hallucination",
+    "notes": "Promises an update within one business day. No article supports that."
+  },
+  {
+    "ticketId": "t-26",
+    "label": "success"
+  }
+]

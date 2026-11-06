@@ -1,0 +1,236 @@
+{
+  "ticketId": "h-14",
+  "runId": "d38c1915-25b3-4bed-ba42-f341351c088d",
+  "createdAt": "2026-11-06T08:31:21.721Z",
+  "steps": [
+    {
+      "agentName": "classifier",
+      "input": {
+        "ticket": {
+          "id": "h-14",
+          "subject": "Lost my phone with 2FA",
+          "body": "My phone was stolen and my authenticator app was on it. I can't find my backup codes either. How do I get back in?"
+        }
+      },
+      "toolCalls": [],
+      "startedAt": "2026-11-06T08:31:13.243Z",
+      "endedAt": "2026-11-06T08:31:14.621Z",
+      "durationMs": 1378,
+      "rawOutput": {
+        "category": "account-access",
+        "urgency": "high",
+        "confidenceNote": "Clearly an account access issue with high urgency due to security concerns and user being locked out. High confidence classification."
+      },
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "usage": {
+        "inputTokens": 352,
+        "outputTokens": 44
+      },
+      "stopReason": "end_turn"
+    },
+    {
+      "agentName": "drafting",
+      "input": {
+        "ticket": {
+          "id": "h-14",
+          "subject": "Lost my phone with 2FA",
+          "body": "My phone was stolen and my authenticator app was on it. I can't find my backup codes either. How do I get back in?"
+        },
+        "classification": {
+          "category": "account-access",
+          "urgency": "high",
+          "confidenceNote": "Clearly an account access issue with high urgency due to security concerns and user being locked out. High confidence classification."
+        }
+      },
+      "toolCalls": [
+        {
+          "toolName": "search_kb",
+          "input": {
+            "query": "lost phone authenticator 2FA backup codes account access recovery"
+          },
+          "output": [
+            {
+              "docId": "kb-006",
+              "title": "Two-factor authentication setup",
+              "content": "Enable two-factor authentication from Account Settings > Security > Two-Factor Authentication. Scan the QR code with an authenticator app (e.g. Google Authenticator, Authy) and enter the 6-digit code to confirm setup. Save the backup codes shown at the end in a safe place.",
+              "score": 0.654643866578245
+            },
+            {
+              "docId": "kb-002",
+              "title": "Account locked — suspicious activity flag",
+              "content": "If your account was locked due to a suspicious-activity flag (unusual location, new device, or an admin-triggered security hold), it cannot be unlocked by resetting your password. You must contact support directly so an agent can verify your identity manually before restoring access.",
+              "score": 0.4178500533879051
+            },
+            {
+              "docId": "kb-001",
+              "title": "Account locked — too many failed login attempts",
+              "content": "If your account is locked after several incorrect password attempts, wait 30 minutes and try again, or use the 'Forgot password' link on the login page to reset your password immediately via an emailed link. This is fully self-service — no need to contact support.",
+              "score": 0.3988207151548017
+            }
+          ],
+          "latencyMs": 13,
+          "isError": false,
+          "retrievedDocs": [
+            {
+              "docId": "kb-006",
+              "score": 0.654643866578245
+            },
+            {
+              "docId": "kb-002",
+              "score": 0.4178500533879051
+            },
+            {
+              "docId": "kb-001",
+              "score": 0.3988207151548017
+            }
+          ]
+        },
+        {
+          "toolName": "search_kb",
+          "input": {
+            "query": "two factor authentication disabled recovery no backup codes"
+          },
+          "output": [
+            {
+              "docId": "kb-006",
+              "title": "Two-factor authentication setup",
+              "content": "Enable two-factor authentication from Account Settings > Security > Two-Factor Authentication. Scan the QR code with an authenticator app (e.g. Google Authenticator, Authy) and enter the 6-digit code to confirm setup. Save the backup codes shown at the end in a safe place.",
+              "score": 0.6420250569192616
+            },
+            {
+              "docId": "kb-001",
+              "title": "Account locked — too many failed login attempts",
+              "content": "If your account is locked after several incorrect password attempts, wait 30 minutes and try again, or use the 'Forgot password' link on the login page to reset your password immediately via an emailed link. This is fully self-service — no need to contact support.",
+              "score": 0.40268694727581805
+            },
+            {
+              "docId": "kb-002",
+              "title": "Account locked — suspicious activity flag",
+              "content": "If your account was locked due to a suspicious-activity flag (unusual location, new device, or an admin-triggered security hold), it cannot be unlocked by resetting your password. You must contact support directly so an agent can verify your identity manually before restoring access.",
+              "score": 0.38114528800211406
+            }
+          ],
+          "latencyMs": 13,
+          "isError": false,
+          "retrievedDocs": [
+            {
+              "docId": "kb-006",
+              "score": 0.6420250569192616
+            },
+            {
+              "docId": "kb-001",
+              "score": 0.40268694727581805
+            },
+            {
+              "docId": "kb-002",
+              "score": 0.38114528800211406
+            }
+          ]
+        },
+        {
+          "toolName": "search_kb",
+          "input": {
+            "query": "locked out account authenticator app lost device"
+          },
+          "output": [
+            {
+              "docId": "kb-002",
+              "title": "Account locked — suspicious activity flag",
+              "content": "If your account was locked due to a suspicious-activity flag (unusual location, new device, or an admin-triggered security hold), it cannot be unlocked by resetting your password. You must contact support directly so an agent can verify your identity manually before restoring access.",
+              "score": 0.6085110363997911
+            },
+            {
+              "docId": "kb-001",
+              "title": "Account locked — too many failed login attempts",
+              "content": "If your account is locked after several incorrect password attempts, wait 30 minutes and try again, or use the 'Forgot password' link on the login page to reset your password immediately via an emailed link. This is fully self-service — no need to contact support.",
+              "score": 0.5471529737595825
+            },
+            {
+              "docId": "kb-006",
+              "title": "Two-factor authentication setup",
+              "content": "Enable two-factor authentication from Account Settings > Security > Two-Factor Authentication. Scan the QR code with an authenticator app (e.g. Google Authenticator, Authy) and enter the 6-digit code to confirm setup. Save the backup codes shown at the end in a safe place.",
+              "score": 0.4719984229186557
+            }
+          ],
+          "latencyMs": 12,
+          "isError": false,
+          "retrievedDocs": [
+            {
+              "docId": "kb-002",
+              "score": 0.6085110363997911
+            },
+            {
+              "docId": "kb-001",
+              "score": 0.5471529737595825
+            },
+            {
+              "docId": "kb-006",
+              "score": 0.4719984229186557
+            }
+          ]
+        }
+      ],
+      "startedAt": "2026-11-06T08:31:14.622Z",
+      "endedAt": "2026-11-06T08:31:19.021Z",
+      "durationMs": 4399,
+      "rawOutput": "I understand how stressful this situation must be. Unfortunately, I wasn't able to find a specific article in our knowledge base covering recovery when you've lost both your authenticator app and backup codes.\n\nThis is a security-sensitive situation that requires identity verification to ensure we're helping the legitimate account owner. Since you don't have access to your 2FA method or backup codes, you'll need to contact our support team directly so an agent can verify your identity and help restore your access.\n\nPlease reach out to support with any identity verification information you can provide (such as the email address associated with your account, payment methods on file, or other account details). Our team will work with you to securely regain access to your account.",
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "usage": {
+        "inputTokens": 1946,
+        "outputTokens": 155
+      },
+      "stopReason": "end_turn"
+    },
+    {
+      "agentName": "supervisor",
+      "input": {
+        "ticket": {
+          "id": "h-14",
+          "subject": "Lost my phone with 2FA",
+          "body": "My phone was stolen and my authenticator app was on it. I can't find my backup codes either. How do I get back in?"
+        },
+        "classification": {
+          "category": "account-access",
+          "urgency": "high",
+          "confidenceNote": "Clearly an account access issue with high urgency due to security concerns and user being locked out. High confidence classification."
+        },
+        "draft": "I understand how stressful this situation must be. Unfortunately, I wasn't able to find a specific article in our knowledge base covering recovery when you've lost both your authenticator app and backup codes.\n\nThis is a security-sensitive situation that requires identity verification to ensure we're helping the legitimate account owner. Since you don't have access to your 2FA method or backup codes, you'll need to contact our support team directly so an agent can verify your identity and help restore your access.\n\nPlease reach out to support with any identity verification information you can provide (such as the email address associated with your account, payment methods on file, or other account details). Our team will work with you to securely regain access to your account.",
+        "retrievedDocs": [
+          {
+            "docId": "kb-006",
+            "title": "Two-factor authentication setup",
+            "content": "Enable two-factor authentication from Account Settings > Security > Two-Factor Authentication. Scan the QR code with an authenticator app (e.g. Google Authenticator, Authy) and enter the 6-digit code to confirm setup. Save the backup codes shown at the end in a safe place.",
+            "score": 0.654643866578245
+          },
+          {
+            "docId": "kb-002",
+            "title": "Account locked — suspicious activity flag",
+            "content": "If your account was locked due to a suspicious-activity flag (unusual location, new device, or an admin-triggered security hold), it cannot be unlocked by resetting your password. You must contact support directly so an agent can verify your identity manually before restoring access.",
+            "score": 0.6085110363997911
+          },
+          {
+            "docId": "kb-001",
+            "title": "Account locked — too many failed login attempts",
+            "content": "If your account is locked after several incorrect password attempts, wait 30 minutes and try again, or use the 'Forgot password' link on the login page to reset your password immediately via an emailed link. This is fully self-service — no need to contact support.",
+            "score": 0.5471529737595825
+          }
+        ]
+      },
+      "toolCalls": [],
+      "startedAt": "2026-11-06T08:31:19.021Z",
+      "endedAt": "2026-11-06T08:31:21.721Z",
+      "durationMs": 2700,
+      "rawOutput": {
+        "verdict": "approve",
+        "groundednessCheck": "All claims in the draft reply are grounded in the retrieved knowledge base content. The draft correctly identifies that this is a security-sensitive situation requiring identity verification, which aligns with kb-002's statement that 'it cannot be unlocked by resetting your password. You must contact support directly so an agent can verify your identity manually before restoring access.' The recommendation to contact support directly for identity verification is directly supported by the retrieved documentation.",
+        "rationale": "The draft appropriately acknowledges the limitation (no specific KB article for this exact scenario) while providing accurate guidance grounded in kb-002, which covers security-sensitive account lockouts requiring support intervention and identity verification. The suggestion to provide identity verification details (email, payment methods, account details) is a reasonable extrapolation of 'verify your identity' and aligns with standard support procedures. The response is empathetic, clear about next steps, and does not make any unsupported claims about recovery procedures."
+      },
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "usage": {
+        "inputTokens": 806,
+        "outputTokens": 214
+      },
+      "stopReason": "end_turn"
+    }
+  ]
+}

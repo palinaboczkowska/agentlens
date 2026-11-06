@@ -1,0 +1,104 @@
+[
+  {
+    "ticketId": "h-01",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-02",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-03",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-04",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-05",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-06",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-07",
+    "label": "bad-reasoning",
+    "notes": "Artikeln säger att Admins kan ta bort medlemmar, inte att bara de kan. \"Only Admins\" och att Editors saknar åtkomst är en egen slutsats om behörigheter."
+  },
+  {
+    "ticketId": "h-08",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-09",
+    "label": "hallucination",
+    "notes": "\"We haven't tested or optimized for that browser\" står ingenstans. Resten är ärligt."
+  },
+  {
+    "ticketId": "h-10",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-11",
+    "label": "bad-reasoning",
+    "notes": "Artikeln gäller över 10 000 rader. Svaret för över den till 500 rader och säger att rättningen ska lösa problemet."
+  },
+  {
+    "ticketId": "h-12",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-13",
+    "label": "hallucination",
+    "notes": "Hänvisar till en inställning för e-postnotiser i kontoinställningarna, som ingen artikel nämner."
+  },
+  {
+    "ticketId": "h-14",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-15",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-16",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-17",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-18",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-19",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-20",
+    "label": "bad-reasoning",
+    "notes": "Artikeln gäller Free till Pro. Svaret för över prorateringen till Pro till Enterprise, men ber sedan kunden bekräfta med sälj."
+  },
+  {
+    "ticketId": "h-21",
+    "label": "hallucination",
+    "notes": "Hittar på att priset räknas om efter antal medlemmar nästa period. Ingen artikel säger det."
+  },
+  {
+    "ticketId": "h-22",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-23",
+    "label": "success"
+  },
+  {
+    "ticketId": "h-24",
+    "label": "success"
+  }
+]

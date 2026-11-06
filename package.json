@@ -17,7 +17,8 @@
     "format": "prettier --write .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "cli": "tsx src/cli.ts"
+    "cli": "tsx src/cli.ts",
+    "gate": "tsx src/cli.ts evaluate --verify --cache tests/fixtures/verdicts.json --golden tests/fixtures/goldenInjected.json --traces tests/fixtures/traces/injected --min-recall hallucination=1 && tsx src/cli.ts evaluate --verify --cache tests/fixtures/verdicts.json --golden tests/fixtures/golden-fault-wrong-docs.json --traces tests/fixtures/traces/fault-wrong-docs --min-recall bad-retrieval=1 && tsx src/cli.ts evaluate --verify --cache tests/fixtures/verdicts.json --golden tests/fixtures/golden-fault-search-error.json --traces tests/fixtures/traces/fault-search-error --min-recall wrong-tool-call=1 && tsx src/cli.ts evaluate --verify --cache tests/fixtures/verdicts.json --golden tests/fixtures/goldenHeldOut.json --traces tests/fixtures/traces/heldout --min-recall hallucination=0.6 bad-reasoning=0.9"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.0",

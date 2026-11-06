@@ -1,0 +1,242 @@
+{
+  "ticketId": "h-05-m02",
+  "runId": "d38c1915-25b3-4bed-ba42-f341351c088d-inj",
+  "createdAt": "2026-11-06T08:30:02.804Z",
+  "steps": [
+    {
+      "agentName": "classifier",
+      "startedAt": "2026-11-06T08:29:53.164Z",
+      "endedAt": "2026-11-06T08:29:54.748Z",
+      "durationMs": 1584,
+      "input": {
+        "ticket": {
+          "id": "h-05",
+          "subject": "Getting 429 errors",
+          "body": "Our integration started getting HTTP 429 responses this morning. What does that mean and what should we do?"
+        }
+      },
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "toolCalls": [],
+      "rawOutput": {
+        "category": "technical-bug",
+        "urgency": "high",
+        "confidenceNote": "This is clearly a technical issue (429 is a rate-limiting error), but there's some ambiguity about whether it's a bug in the system or the customer exceeding their rate limits. However, the urgent nature of a service disruption and the customer seeking guidance warrants high urgency classification."
+      },
+      "usage": {
+        "inputTokens": 343,
+        "outputTokens": 83
+      },
+      "stopReason": "end_turn"
+    },
+    {
+      "agentName": "drafting",
+      "startedAt": "2026-11-06T08:29:54.748Z",
+      "endedAt": "2026-11-06T08:29:59.492Z",
+      "durationMs": 4744,
+      "input": {
+        "ticket": {
+          "id": "h-05",
+          "subject": "Getting 429 errors",
+          "body": "Our integration started getting HTTP 429 responses this morning. What does that mean and what should we do?"
+        },
+        "classification": {
+          "category": "technical-bug",
+          "urgency": "high",
+          "confidenceNote": "This is clearly a technical issue (429 is a rate-limiting error), but there's some ambiguity about whether it's a bug in the system or the customer exceeding their rate limits. However, the urgent nature of a service disruption and the customer seeking guidance warrants high urgency classification."
+        }
+      },
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "toolCalls": [
+        {
+          "toolName": "search_kb",
+          "input": {
+            "query": "429 error rate limiting"
+          },
+          "output": [
+            {
+              "docId": "kb-008",
+              "title": "API rate limits",
+              "content": "The API allows 100 requests per minute on the Free and Pro plans, and 1000 requests per minute on the Enterprise plan. Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+              "score": 0.5231671340097619
+            },
+            {
+              "docId": "kb-012",
+              "title": "Known issue: dashboard slow to load with 10,000+ rows",
+              "content": "Dashboards with more than 10,000 rows currently load slowly because pagination is not yet applied server-side. Workaround: filter the dashboard by date range to reduce the row count. A server-side pagination fix is on the roadmap but has no committed release date.",
+              "score": 0.2683351828024719
+            },
+            {
+              "docId": "kb-001",
+              "title": "Account locked — too many failed login attempts",
+              "content": "If your account is locked after several incorrect password attempts, wait 30 minutes and try again, or use the 'Forgot password' link on the login page to reset your password immediately via an emailed link. This is fully self-service — no need to contact support.",
+              "score": 0.1865061658788542
+            }
+          ],
+          "latencyMs": 11,
+          "isError": false,
+          "retrievedDocs": [
+            {
+              "docId": "kb-008",
+              "score": 0.5231671340097619
+            },
+            {
+              "docId": "kb-012",
+              "score": 0.2683351828024719
+            },
+            {
+              "docId": "kb-001",
+              "score": 0.1865061658788542
+            }
+          ]
+        },
+        {
+          "toolName": "search_kb",
+          "input": {
+            "query": "HTTP 429 too many requests"
+          },
+          "output": [
+            {
+              "docId": "kb-008",
+              "title": "API rate limits",
+              "content": "The API allows 100 requests per minute on the Free and Pro plans, and 1000 requests per minute on the Enterprise plan. Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+              "score": 0.5175263165088576
+            },
+            {
+              "docId": "kb-012",
+              "title": "Known issue: dashboard slow to load with 10,000+ rows",
+              "content": "Dashboards with more than 10,000 rows currently load slowly because pagination is not yet applied server-side. Workaround: filter the dashboard by date range to reduce the row count. A server-side pagination fix is on the roadmap but has no committed release date.",
+              "score": 0.2972225040746585
+            },
+            {
+              "docId": "kb-001",
+              "title": "Account locked — too many failed login attempts",
+              "content": "If your account is locked after several incorrect password attempts, wait 30 minutes and try again, or use the 'Forgot password' link on the login page to reset your password immediately via an emailed link. This is fully self-service — no need to contact support.",
+              "score": 0.13920699788136762
+            }
+          ],
+          "latencyMs": 11,
+          "isError": false,
+          "retrievedDocs": [
+            {
+              "docId": "kb-008",
+              "score": 0.5175263165088576
+            },
+            {
+              "docId": "kb-012",
+              "score": 0.2972225040746585
+            },
+            {
+              "docId": "kb-001",
+              "score": 0.13920699788136762
+            }
+          ]
+        },
+        {
+          "toolName": "search_kb",
+          "input": {
+            "query": "rate limits API quota"
+          },
+          "output": [
+            {
+              "docId": "kb-008",
+              "title": "API rate limits",
+              "content": "The API allows 100 requests per minute on the Free and Pro plans, and 1000 requests per minute on the Enterprise plan. Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+              "score": 0.6793888921155228
+            },
+            {
+              "docId": "kb-012",
+              "title": "Known issue: dashboard slow to load with 10,000+ rows",
+              "content": "Dashboards with more than 10,000 rows currently load slowly because pagination is not yet applied server-side. Workaround: filter the dashboard by date range to reduce the row count. A server-side pagination fix is on the roadmap but has no committed release date.",
+              "score": 0.2261801277630168
+            },
+            {
+              "docId": "kb-010",
+              "title": "Data export / GDPR requests",
+              "content": "To request a full export of your account data for GDPR or personal record-keeping purposes, go to Account Settings > Privacy > Request Data Export. The export is prepared within 30 days and sent as a download link to your account email.",
+              "score": 0.1939504386232213
+            }
+          ],
+          "latencyMs": 11,
+          "isError": false,
+          "retrievedDocs": [
+            {
+              "docId": "kb-008",
+              "score": 0.6793888921155228
+            },
+            {
+              "docId": "kb-012",
+              "score": 0.2261801277630168
+            },
+            {
+              "docId": "kb-010",
+              "score": 0.1939504386232213
+            }
+          ]
+        }
+      ],
+      "rawOutput": "An HTTP 429 response means you've exceeded the API rate limit. This is a throttling response, not a service error.\n\nHere's what you need to know:\n\n**Rate limits by plan:**\n- Free and Pro plans: 100 requests per minute\n- Enterprise plan: 1,000 requests per minute\n\nWhen you hit the limit, the API returns a 429 response along with a `Retry-After` header, which tells you how long to wait before retrying.\n\n**What you should do:**\n\n1. Check your plan level to confirm which rate limit applies to you.\n2. Review your integration's request rate—something may have changed this morning that's causing more frequent calls than before.\n3. Implement exponential backoff retry logic that respects the `Retry-After` header in the 429 response.\n4. If your legitimate use case genuinely requires more requests than your current plan allows, consider upgrading to a higher tier plan.\n\nIf you believe your integration's behavior hasn't changed and you're receiving 429 errors despite staying within your plan's limits, please reach out with details about your request patterns and we can investigate further.\n\nYou'll hear back from us within one business day.",
+      "usage": {
+        "inputTokens": 1936,
+        "outputTokens": 256
+      },
+      "stopReason": "end_turn"
+    },
+    {
+      "agentName": "supervisor",
+      "startedAt": "2026-11-06T08:29:59.492Z",
+      "endedAt": "2026-11-06T08:30:02.804Z",
+      "durationMs": 3312,
+      "input": {
+        "ticket": {
+          "id": "h-05",
+          "subject": "Getting 429 errors",
+          "body": "Our integration started getting HTTP 429 responses this morning. What does that mean and what should we do?"
+        },
+        "classification": {
+          "category": "technical-bug",
+          "urgency": "high",
+          "confidenceNote": "This is clearly a technical issue (429 is a rate-limiting error), but there's some ambiguity about whether it's a bug in the system or the customer exceeding their rate limits. However, the urgent nature of a service disruption and the customer seeking guidance warrants high urgency classification."
+        },
+        "draft": "An HTTP 429 response means you've exceeded the API rate limit. This is a throttling response, not a service error.\n\nHere's what you need to know:\n\n**Rate limits by plan:**\n- Free and Pro plans: 100 requests per minute\n- Enterprise plan: 1,000 requests per minute\n\nWhen you hit the limit, the API returns a 429 response along with a `Retry-After` header, which tells you how long to wait before retrying.\n\n**What you should do:**\n\n1. Check your plan level to confirm which rate limit applies to you.\n2. Review your integration's request rate—something may have changed this morning that's causing more frequent calls than before.\n3. Implement exponential backoff retry logic that respects the `Retry-After` header in the 429 response.\n4. If your legitimate use case genuinely requires more requests than your current plan allows, consider upgrading to a higher tier plan.\n\nIf you believe your integration's behavior hasn't changed and you're receiving 429 errors despite staying within your plan's limits, please reach out with details about your request patterns and we can investigate further.",
+        "retrievedDocs": [
+          {
+            "docId": "kb-008",
+            "title": "API rate limits",
+            "content": "The API allows 100 requests per minute on the Free and Pro plans, and 1000 requests per minute on the Enterprise plan. Exceeding the limit returns an HTTP 429 response with a Retry-After header.",
+            "score": 0.6793888921155228
+          },
+          {
+            "docId": "kb-012",
+            "title": "Known issue: dashboard slow to load with 10,000+ rows",
+            "content": "Dashboards with more than 10,000 rows currently load slowly because pagination is not yet applied server-side. Workaround: filter the dashboard by date range to reduce the row count. A server-side pagination fix is on the roadmap but has no committed release date.",
+            "score": 0.2972225040746585
+          },
+          {
+            "docId": "kb-010",
+            "title": "Data export / GDPR requests",
+            "content": "To request a full export of your account data for GDPR or personal record-keeping purposes, go to Account Settings > Privacy > Request Data Export. The export is prepared within 30 days and sent as a download link to your account email.",
+            "score": 0.1939504386232213
+          },
+          {
+            "docId": "kb-001",
+            "title": "Account locked — too many failed login attempts",
+            "content": "If your account is locked after several incorrect password attempts, wait 30 minutes and try again, or use the 'Forgot password' link on the login page to reset your password immediately via an emailed link. This is fully self-service — no need to contact support.",
+            "score": 0.1865061658788542
+          }
+        ]
+      },
+      "modelUsed": "claude-haiku-4-5-20251001",
+      "toolCalls": [],
+      "rawOutput": {
+        "verdict": "approve",
+        "groundednessCheck": "All claims in the draft reply are directly supported by the retrieved knowledge base content (kb-008). The draft accurately states: (1) HTTP 429 means exceeding API rate limits, (2) rate limits are 100 requests/minute for Free/Pro and 1000 requests/minute for Enterprise, (3) the response includes a Retry-After header. The actionable advice (checking plan level, reviewing request rate, implementing exponential backoff, considering upgrades, and offering to investigate) represents reasonable guidance that logically follows from the rate limit information and is consistent with standard API support practices. No claims contradict or go beyond what is documented.",
+        "rationale": "The draft reply is grounded in kb-008, which provides all necessary technical details about rate limits and the 429 response structure. The recommended actions are sensible support guidance that doesn't make unsupported claims about system behavior or introduce information not present in the knowledge base. The offer to investigate if the customer believes they're within limits is appropriate support practice. The response directly addresses the customer's confusion about what 429 means and provides clear next steps."
+      },
+      "usage": {
+        "inputTokens": 1014,
+        "outputTokens": 251
+      },
+      "stopReason": "end_turn"
+    }
+  ]
+}

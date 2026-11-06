@@ -20,10 +20,11 @@ export class AnthropicLlmClient implements LlmClient {
     system,
     prompt,
     schema,
+    maxTokens = 1024,
   }: GenerateStructuredArgs<T>): Promise<StructuredResult<T>> {
     const message = await this.client.beta.messages.parse({
       model,
-      max_tokens: 1024,
+      max_tokens: maxTokens,
       system,
       messages: [{ role: "user", content: prompt }],
       output_format: betaZodOutputFormat(schema),
