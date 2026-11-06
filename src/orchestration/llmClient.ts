@@ -17,6 +17,7 @@ export interface GenerateStructuredArgs<T> {
   system: string;
   prompt: string;
   schema: ZodType<T>;
+  maxTokens?: number;
 }
 
 /**
